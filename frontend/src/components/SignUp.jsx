@@ -137,4 +137,4 @@ const SignUp = () => {
     </div>
   )
 }
-export default SignUp;//1.13.24
+export default SignUp;

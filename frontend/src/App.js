@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import {LoginPage, SignUpPage} from "./Routes.js"
+import {LoginPage, SignUpPage} from "./Routes.js";
 import SupplierSignUp from './components/SupplierSignUp.jsx';
 
 function App() {
