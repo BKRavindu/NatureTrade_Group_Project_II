@@ -5,6 +5,8 @@ import SupplierSignUp from './components/SupplierSignUp.jsx';
 import DeliveryDash from './pages/deliveryCompany/DeliveryDash';
 import OrderView from './pages/deliveryCompany/OrderView';
 import Order from './pages/deliveryCompany/Order';
+import Subscription from './pages/deliveryCompany/Subscription';
+import SubscriptionActive from './pages/deliveryCompany/SubscriptionActive';
 
 function App() {
   return (
@@ -16,8 +18,11 @@ function App() {
         <Route path="/DeliveryDash" element={<DeliveryDash />} />
         <Route path="/OrderView" element={<OrderView />} />
         <Route path="/Order" element={<Order />} />
+        <Route path="/Subscription" element={<Subscription />} />
+        <Route path="/SubscriptionActive" element={<SubscriptionActive />} />
       </Routes>
     </BrowserRouter>
+    
   );
 }
 
