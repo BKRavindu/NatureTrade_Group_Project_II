@@ -33,7 +33,7 @@ function CollectorDash() {
                 </div>
                 <div className="flex justify-between items-center p-4 bg-white mt-4 rounded-lg border-gray-300 rounded-2xl shadow-lg">
                     <div className="flex flex-col gap-4 flex-col">
-                        <div className="text-6xl font-normal">Hello, <span className='font-light text-2xl'>CNMO2!</span></div>
+                        <div className="text-6xl font-normal">Hello, <span className='font-light text-2xl'></span></div>
                         <div className="font-normal mt-5"><span className='text-red-500'>5</span>  branches around Sri Lanka.</div>
                     </div>
                     <img src={truck} alt="" className='w-[300px] h-[150px]'   />
