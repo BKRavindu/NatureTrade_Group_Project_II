@@ -17,7 +17,7 @@ function Order() {
                             <div className="font-normal text-md">Order</div>
                         </div>
                 </div>
-                <div className="flex flex-col gap-3 bg-white my-7 p-5 rounded-lg shadow-lg p-8 pt-5">
+                <div className="flex flex-col gap-3 bg-white my-7 mx-7 p-5 rounded-lg shadow-lg p-8 pt-5">
                     <div className="flex justify-between">
                         <div className="font-semibold text-xl">Orders</div>
                         <div className="flex gap-3 items-center justify-center">
@@ -25,7 +25,7 @@ function Order() {
                             <i className='bx bx-search' ></i>
                         </div>
                     </div>
-                    <table className=''>
+                    <table className='mr-3'>
                         <tr className='font-semibold font-center '>
                             <th className='px-6 py-3  text-sm font-semibold '>Order ID</th>
                             <th className='px-6 py-3  text-sm font-semibold '>Customer</th>
