@@ -8,6 +8,10 @@ import Order from './pages/deliveryCompany/Order';
 import Subscription from './pages/deliveryCompany/Subscription';
 import SubscriptionActive from './pages/deliveryCompany/SubscriptionActive';
 import CollectorDash from './pages/CollectingCenter/CollectorDash';
+import CollectorStore from './pages/CollectingCenter/CollectorStore';
+
+
+
 
 
 
