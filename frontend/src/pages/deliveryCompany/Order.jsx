@@ -1,6 +1,8 @@
 import React from 'react'
 import NavBar from '../../components/deliveryCompany/NavBar'
 import SideBar from '../../components/deliveryCompany/SideBar'
+import { Link } from 'react-router-dom'
+
 
 function Order() {
   return (
@@ -43,7 +45,7 @@ function Order() {
                                 <td className='px-8 py-5 text-sm'>Paid</td>
                                 <td className='px-8 py-5 text-sm'><span className='text-green-600 font-semibold'>Processing</span></td>
                                 <td className='px-8 py-5 text-sm'>15000</td>
-                                <td className='px-8 py-5 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                                <td className='px-8 py-5 text-sm'><Link to="/Delivery/OrderView"><ion-icon name="eye-outline"></ion-icon></Link></td>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>006</td>
@@ -52,7 +54,7 @@ function Order() {
                                 <td className='px-8 py-5 text-sm'>Paid</td>
                                 <td className='px-8 py-5 text-sm'><span className='text-red-400 font-semibold'>Cancelled</span></td>
                                 <td className='px-8 py-5 text-sm'>30000</td>
-                                <td className='px-8 py-5 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                                <td className='px-8 py-5 text-sm'><Link to="/Delivery/OrderView"><ion-icon name="eye-outline"></ion-icon></Link></td>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>004</td>
@@ -61,7 +63,7 @@ function Order() {
                                 <td className='px-8 py-5 text-sm'>Paid</td>
                                 <td className='px-8 py-5 text-sm'><span className='text-green-600 font-semibold'>Processing</span></td>
                                 <td className='px-8 py-5 text-sm'>25000</td>
-                                <td className='px-8 py-5 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                                <td className='px-8 py-5 text-sm'><Link to="/Delivery/OrderView"><ion-icon name="eye-outline"></ion-icon></Link></td>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>007</td>
@@ -70,7 +72,7 @@ function Order() {
                                 <td className='px-8 py-5 text-sm'>Paid</td>
                                 <td className='px-8 py-5 text-sm'><span className='text-green-600 font-semibold'>Processing</span></td>
                                 <td className='px-8 py-5 text-sm'>21000</td>
-                                <td className='px-8 py-5 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                                <td className='px-8 py-5 text-sm'><Link to="/Delivery/OrderView"><ion-icon name="eye-outline"></ion-icon></Link></td>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>014</td>
@@ -79,7 +81,7 @@ function Order() {
                                 <td className='px-8 py-5 text-sm'>Paid</td>
                                 <td className='px-8 py-5 text-sm'><span className='text-green-600 font-semibold'>Processing</span></td>
                                 <td className='px-8 py-5 text-sm'>22000</td>
-                                <td className='px-8 py-5 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                                <td className='px-8 py-5 text-sm'><Link to="/Delivery/OrderView"><ion-icon name="eye-outline"></ion-icon></Link></td>
                             </tr>
                         </tbody>
 
