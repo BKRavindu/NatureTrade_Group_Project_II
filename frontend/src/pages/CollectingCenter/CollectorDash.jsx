@@ -1,7 +1,7 @@
 import React from 'react'
 
-import SideBar from '../../components/CollectingCenter/SideBar'
-import NavBar from '../../components/CollectingCenter/NavBar'
+import SideBar from '../../components/CollectingCenter/CollectorSideBar'
+import NavBar from '../../components/CollectingCenter/CollectorNavBar'
 import truck from '../../assets/undraw_delivery_truck_vt6p (1).svg'
 import item1 from '../../assets/item1.svg'
 import item2 from '../../assets/item2.svg'
@@ -33,8 +33,8 @@ function CollectorDash() {
                 </div>
                 <div className="flex justify-between items-center p-4 bg-white mt-4 rounded-lg border-gray-300 rounded-2xl shadow-lg">
                     <div className="flex flex-col gap-4 flex-col">
-                        <div className="text-6xl font-normal">Hello, <span className='font-light text-2xl'>John!</span></div>
-                        <div className="font-normal mt-5">You have <span className='text-red-500'>5</span> orders today.</div>
+                        <div className="text-6xl font-normal">Hello, <span className='font-light text-2xl'></span></div>
+                        <div className="font-normal mt-5"><span className='text-red-500'>5</span>  branches around Sri Lanka.</div>
                     </div>
                     <img src={truck} alt="" className='w-[300px] h-[150px]'   />
                 </div>
@@ -63,7 +63,7 @@ function CollectorDash() {
                 </div>
                 <div className="flex flex-col gap-3 bg-white my-7 p-5 rounded-lg shadow-lg">
                     <div className="flex justify-between">
-                        <div className="font-semibold text-xl">Recent Orders</div>
+                        <div className="font-semibold text-xl">Recent Activities</div>
                         <div className="flex gap-3 items-center justify-center">
                             <input type="text" className='bg-gray-300 w-60 rounded-md px-3' placeholder='search'  />
                             <i className='bx bx-search' ></i>
