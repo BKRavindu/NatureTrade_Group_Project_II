@@ -22,8 +22,8 @@ function NavBar() {
         <i className='bx bxs-bell text-xl'></i>
         <i className='bx bxs-moon text-xl'></i>
         <div className="flex flex-col items-left p-2">
-          <div className="text-md font-semibold">John</div>
-          <div className="text-sm font-ligh">Delivery Partner</div>
+          <div className="text-md font-semibold">CNMO2</div>
+          <div className="text-sm font-ligh">Collecting Center</div>
         </div>
         <img src={profile} alt="Profile" className='w-12 h-12 rounded-full object-cover' />
       </div>
