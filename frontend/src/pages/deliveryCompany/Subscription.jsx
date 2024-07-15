@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../../components/deliveryCompany/NavBar'
 import SideBar from '../../components/deliveryCompany/SideBar'
+import { Link } from 'react-router-dom'
 
 function Subscription() {
   return (
@@ -52,7 +53,9 @@ function Subscription() {
                                 <span>benefit 2</span>
                             </div>
                         </div>
-                        <div className="flex mt-8 -mb-2 shadow-lg text-white px-1 py-1 bg-blue-400 text-center rounded-md w-[150px] justify-center">Activate</div>
+                        <Link to="/Delivery/SubscriptionActive">
+                            <div className="flex mt-8 -mb-2 shadow-lg text-white px-1 py-1 bg-blue-400 text-center rounded-md w-[150px] justify-center">Activate</div>
+                        </Link>
                     </div>
 
 
