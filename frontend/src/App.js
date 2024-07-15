@@ -13,7 +13,10 @@ import Users from './pages/admin/Users';
 import ViewUser from './pages/admin/ViewUser';
 import Contact from './pages/admin/Contact';
 import Centers from './pages/admin/Centers';
-
+import SupplierDash from './pages/supplier/SupplierDash.jsx';
+import Requests from './pages/supplier/Requests.jsx';
+import Store from './pages/supplier/Store.jsx'
+import CollectorStore from './pages/CollectingCenter/CollectorStore';
 
 
 function App() {
@@ -34,6 +37,9 @@ function App() {
         <Route path="/Admin/Contact" element={<Contact/>}/>
         <Route path="/Admin/Centers" element={<Centers/>}/>
         <Route path="/CollectorDash" element={<CollectorDash/>}/>
+        <Route path="/SupplierDash" element={<SupplierDash/>}/>
+        <Route path="/Requests" element={<Requests/>}/>
+        <Route path="/Store" element={<Store/>}/>
 
       </Routes>
     </BrowserRouter>
