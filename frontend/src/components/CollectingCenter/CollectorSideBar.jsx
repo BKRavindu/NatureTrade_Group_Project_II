@@ -8,15 +8,26 @@ function SideBar() {
             <span className='font-sans ml-4 font-light'>Dashboard</span>
         </div>
 
-    
+        <div className="p-2 flex items-center">
+        <i className='bx bx-notepad text-gray-700 text-xl'></i>
+        <span className='font-sans ml-4 font-light'>Suppliers</span>
+      </div>
+
       <div className="p-2 flex items-center">
         <i className='bx bx-notepad text-gray-700 text-xl'></i>
         <span className='font-sans ml-4 font-light'>Requests</span>
       </div>
+
       <div className="p-2 flex items-center">
         <i className='bx bx-chat text-gray-700 text-xl'></i>
-        <span className='font-sans ml-4 font-light'>Contact</span>
+        <span className='font-sans ml-4 font-light'>Store</span>
       </div>
+
+      <div className="p-2 flex items-center">
+        <i className='bx bx-chat text-gray-700 text-xl'></i>
+        <span className='font-sans ml-4 font-light'>Bidding</span>
+      </div>
+
       <div className="p-2 flex items-center">
         <i className='bx bx-user text-gray-700 text-xl'></i>
         <span className='font-sans ml-4 font-light'>Profile</span>
