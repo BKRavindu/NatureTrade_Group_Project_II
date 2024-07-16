@@ -23,7 +23,6 @@ import Store from './pages/supplier/Store.jsx'
 import CollectorStore from './pages/CollectingCenter/CollectorStore';
 
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -42,7 +41,7 @@ function App() {
         <Route path="/Admin/Contact" element={<Contact/>}/>
         <Route path="/Admin/Centers" element={<Centers/>}/>
         <Route path="/CollectorDash" element={<CollectorDash/>}/>
-        <Route path="/CollectorStore" element={<CollectorStore/>}/>
+        <Route path="/CollectorStore" element={<CollectorStore/>}
         <Route path="/BuyerDash" element={<BuyerDash/>}/>
         <Route path="/BOrders" element={<BOrders/>}/>
         <Route path="/BCollectingcenter" element={<BCollectingcenter/>}/>
