@@ -1,5 +1,5 @@
 import React from 'react'
-
+import profile from '../../assets/images.jpeg';
 import SideBar from '../../components/CollectingCenter/CollectorSideBar'
 import NavBar from '../../components/CollectingCenter/CollectorNavBar'
 
@@ -27,10 +27,13 @@ function CollectorStore() {
                 </div>
                 <div className="flex justify-between items-center p-4 bg-white mt-4 rounded-lg border-gray-300 rounded-2xl shadow-lg">
                     <div className="flex flex-col gap-4 flex-col">
-                        <div className="text-6xl font-normal">Hello, <span className='font-light text-2xl'>CNMO2!</span></div>
+                        <div className='flex '>
+                        <img src={profile} alt="Profile" className='w-20 h-20 rounded-full object-cover' />
+                        <div className="text-2xl font-normal">Hello, <span className='font-light text-2xl'>CNMO2!</span></div>
                         <div className="font-normal mt-5"><span className='text-red-500'>5</span>  branches around Sri Lanka.</div>
+                        </div>
+                        
                     </div>
-                    {/* <img src={truck} alt="" className='w-[300px] h-[150px]'   /> */}
                 </div>
             </div>
         </div>

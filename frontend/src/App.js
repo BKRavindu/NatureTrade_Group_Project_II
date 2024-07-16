@@ -28,7 +28,7 @@ function App() {
         <Route path="/Subscription" element={<Subscription />} />
         <Route path="/SubscriptionActive" element={<SubscriptionActive />} />
         <Route path="/CollectorDash" element={<CollectorDash/>}/>
-
+        <Route path="/CollectorStore" element={<CollectorStore/>}/>
       </Routes>
     </BrowserRouter>
     
