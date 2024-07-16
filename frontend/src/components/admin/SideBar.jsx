@@ -6,7 +6,7 @@ function SideBar() {
   return (
     <div className="flex flex-col m-4 font-normal mt-[60px]">
         <NavLink 
-          to="/Delivery/Dashboard" 
+          to="/Admin/Dashboard" 
           className={({ isActive }) => 
             isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>
@@ -15,7 +15,7 @@ function SideBar() {
         </NavLink>
 
         <NavLink 
-          to="/Delivery/Order" 
+          to="/Admin/Order" 
           className={({ isActive }) => 
             isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>
@@ -24,7 +24,7 @@ function SideBar() {
         </NavLink>
 
 
-        <NavLink to="/Delivery/Contact" 
+        <NavLink to="/Admin/Contact" 
           className={({ isActive }) => 
           isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>
@@ -32,15 +32,24 @@ function SideBar() {
           <i className='bx bx-chat text-gray-700 text-xl'></i>
           <span className='font-sans ml-4 font-light'>Contact</span>
         </NavLink>
-        <NavLink to="/Delivery/Subscription"
+        <NavLink to="/Admin/Centers"
           className={({ isActive }) => 
           isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>
-          <i className='bx bx-credit-card-front text-gray-700 text-xl'></i>
-          <span className='font-sans ml-4 font-light'>Subscription</span>
+          <i class='bx bx-store-alt text-gray-700 text-xl'></i>
+          <span className='font-sans ml-4 font-light'>Centers</span>
         </NavLink>
 
-        <NavLink to="/Delivery/Profile" 
+        <NavLink to="/Admin/Users" 
+          className={({ isActive }) => 
+          isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
+          }>
+          <i class='bx bx-user-pin text-gray-700 text-xl'></i>
+          <span className='font-sans ml-4 font-light'>Users</span>
+            
+        </NavLink>
+
+        <NavLink to="/Profile" 
           className={({ isActive }) => 
           isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>
