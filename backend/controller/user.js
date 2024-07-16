@@ -5,6 +5,7 @@ const multer = require("multer");
 const fs = require("fs");
 const ErrorHandler = require("../utils/ErrorHandler");
 const User = require("../model/user");
+const jwt = require("jsonwebtoken");
 
 // Define the path to the uploads folder
 const uploadsPath = path.join("C:\\Users\\Asus\\Desktop\\store", "uploads");
@@ -64,14 +65,27 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
 
         await user.save();
 
-        res.status(201).json({
-            success: true,
-            user,
-        });
+        const activationToken = createActivationToken(user);
+
+        const activationUrl = `http://localhost:3000/activation/${activationToken}`;
+
+        try {
+            
+        } catch (error) {
+           return next(new ErrorHandler(err.message, 500)); 
+        }
+
     } catch (error) {
         console.error("An error occurred:", error);
         return next(new ErrorHandler("Internal Server Error", 500));
     }
 });
+
+//create activation Token
+const createActivationToken = (user) => {
+    return jwt.sign(user, process.env.ACTIVATION_SECRET, {
+        expiresIn: "5m",
+    })
+}
 
 module.exports = router;
