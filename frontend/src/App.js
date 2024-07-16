@@ -22,8 +22,6 @@ import Requests from './pages/supplier/Requests.jsx';
 import Store from './pages/supplier/Store.jsx'
 import CollectorStore from './pages/CollectingCenter/CollectorStore';
 
-
-
 function App() {
   return (
     <BrowserRouter>
