@@ -6,6 +6,7 @@ const fs = require("fs");
 const ErrorHandler = require("../utils/ErrorHandler");
 const User = require("../model/user");
 const jwt = require("jsonwebtoken");
+const sendMail = require("../utils/sendMail");
 
 // Define the path to the uploads folder
 const uploadsPath = path.join("C:\\Users\\Asus\\Desktop\\store", "uploads");
@@ -70,9 +71,17 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
         const activationUrl = `http://localhost:3000/activation/${activationToken}`;
 
         try {
-            
+            await sendMail({
+                email: user.email,
+                subject: "Activate your account",
+                message: `Hello ${user.name}, please click on the link to activate your account: ${activationUrl}`,
+            });
+            res.status(201).json({
+                success: true,
+                message: `Please check your email: ${user.email} to activate your account!`,
+            });
         } catch (error) {
-           return next(new ErrorHandler(err.message, 500)); 
+            return next(new ErrorHandler(error.message, 500));
         }
 
     } catch (error) {
@@ -81,11 +90,16 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
     }
 });
 
-//create activation Token
+// Create activation token
 const createActivationToken = (user) => {
-    return jwt.sign(user, process.env.ACTIVATION_SECRET, {
+    const payload = {
+        userId: user._id,
+        email: user.email,
+    };
+    return jwt.sign(payload, process.env.ACTIVATION_SECRET, {
         expiresIn: "5m",
-    })
-}
+    });
+};
 
+// Export the router
 module.exports = router;
