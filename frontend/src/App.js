@@ -1,7 +1,7 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-// import {LoginPage, SignUpPage} from "./Routes.js";
-// import SupplierSignUp from './components/SupplierSignUp.jsx';
+import {LoginPage, SignUpPage} from "./Routes.js";
+import SupplierSignUp from './components/SupplierSignUp.jsx';
 import DeliveryDash from './pages/deliveryCompany/DeliveryDash';
 import OrderView from './pages/deliveryCompany/OrderView';
 import Order from './pages/deliveryCompany/Order';
@@ -26,13 +26,14 @@ import SupplierContact from './pages/supplier/SupplierContact.jsx'
 import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
 
 
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/login" element={<LoginPage /> } /> */}
-        {/* <Route path="/sign-up" element={<SignUpPage /> } />
-        <Route path="/supplier-sign-up" element={<SupplierSignUp />} /> */}
+        <Route path="/login" element={<LoginPage /> } /> 
+        <Route path="/sign-up" element={<SignUpPage /> } />
+        <Route path="/supplier-sign-up" element={<SupplierSignUp />} /> 
         <Route path="/Delivery/Dashboard" element={<DeliveryDash />} />
         <Route path="/Delivery/OrderView" element={<OrderView />} />
         <Route path="/Delivery/Order" element={<Order />} />
@@ -45,6 +46,7 @@ function App() {
         <Route path="/Admin/Centers" element={<Centers/>}/>
         <Route path="/CollectorDash" element={<CollectorDash/>}/>
         <Route path="/CollectorStore" element={<CollectorStore/>}/>
+        <Route path="/CollectorStore" element={<CollectorStore/>}
         <Route path="/BuyerDash" element={<BuyerDash/>}/>
         <Route path="/BOrders" element={<BOrders/>}/>
         <Route path="/BCollectingcenter" element={<BCollectingcenter/>}/>
@@ -57,7 +59,6 @@ function App() {
         <Route path="/supplier/SupplierProfile" element={<SupplierProfile/>}/>
       </Routes>
     </BrowserRouter>
-    
   );
 }
 
