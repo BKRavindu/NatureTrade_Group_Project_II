@@ -13,6 +13,7 @@ import Users from './pages/admin/Users';
 import ViewUser from './pages/admin/ViewUser';
 import Contact from './pages/admin/Contact';
 import Centers from './pages/admin/Centers';
+import Profile from './pages/admin/Profile';
 import SupplierDash from './pages/supplier/SupplierDash.jsx';
 import Requests from './pages/supplier/Requests.jsx';
 import Store from './pages/supplier/Store.jsx'
@@ -40,6 +41,7 @@ function App() {
         <Route path="/SupplierDash" element={<SupplierDash/>}/>
         <Route path="/Requests" element={<Requests/>}/>
         <Route path="/Store" element={<Store/>}/>
+        <Route path="/Admin/Profile" element={<Profile/>}/>
 
       </Routes>
     </BrowserRouter>

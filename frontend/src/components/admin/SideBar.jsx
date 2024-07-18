@@ -49,7 +49,7 @@ function SideBar() {
             
         </NavLink>
 
-        <NavLink to="/Profile" 
+        <NavLink to="/Admin/ViewUser" 
           className={({ isActive }) => 
           isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>

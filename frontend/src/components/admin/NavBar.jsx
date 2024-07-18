@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from '../../assets/Untitled design (1) 1.svg';
 import tab from '../../assets/Glyph.png';
-import profile from '../../assets/images.jpeg';
+
+import profile4 from '../../assets/Malith_Perera_1714318818.jpeg'
 
 function NavBar() {
   return (
@@ -25,7 +26,7 @@ function NavBar() {
           <div className="text-md font-semibold">Jane</div>
           <div className="text-sm font-ligh">Admin</div>
         </div>
-        <img src={profile} alt="Profile" className='w-12 h-12 rounded-full object-cover' />
+        <img src={profile4} alt="Profile" className='w-12 h-12 rounded-full object-cover' />
       </div>
     </nav>
     <div className="w-60 rounded-lg bg-white h-16 rounded-tr-none"></div>
