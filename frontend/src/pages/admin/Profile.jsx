@@ -15,6 +15,7 @@ function Profile() {
                     <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Profile</div>
                     <div className="flex flex-row gap-3">
 
+
                         <div className="font-normal text-gray-400 text-md">Dashboard</div>{">"}
 
                         <div className="font-normal text-md">Profile</div>
