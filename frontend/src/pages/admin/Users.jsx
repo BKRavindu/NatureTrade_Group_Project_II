@@ -2,8 +2,11 @@ import React from 'react'
 import NavBar from '../../components/admin/NavBar'
 import SideBar from '../../components/admin/SideBar'
 import { Link } from 'react-router-dom'
-import profile from '../../assets/images.jpeg';
-import profile1 from '../../assets/pexels-photo-3763188 1.png'
+import profile from '../../assets/pexels-photo-3763188 1.png';
+import profile2 from '../../assets/Anusha_de Silva_1714285796.jpeg'
+import profile3 from '../../assets/Kavindi_Ranasinghe_1714286382.jpeg'
+import profile4 from '../../assets/Malith_Perera_1714318818.jpeg'
+
 
 function Users() {
   return (
@@ -56,7 +59,7 @@ function Users() {
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100 whitespace-nowrap'>
                                 <td className='px-8 py-5 text-sm  '>U-010</td>
                                 <td className='px-8 py-5 text-sm flex items-center'>                                    
-                                    <img src={profile1} alt="" className='w-8 h-8 rounded-full object-cover mr-2' />
+                                    <img src={profile4} alt="" className='w-8 h-8 rounded-full object-cover mr-2' />
                                     <div className="text-sm px-2">Jane</div>
                                 </td>
                                 <td className='px-8 py-5 text-sm'>jane@gmail.com</td>
@@ -69,7 +72,7 @@ function Users() {
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100 whitespace-nowrap'>
                                 <td className='px-8 py-5 text-sm  '>U-002</td>
                                 <td className='px-8 py-5 text-sm flex items-center'>                                    
-                                    <img src={profile} alt="" className='w-8 h-8 rounded-full object-cover mr-2' />
+                                    <img src={profile2} alt="" className='w-8 h-8 rounded-full object-cover mr-2' />
                                     <div className="text-sm px-2">Michael</div>
                                 </td>
                                 <td className='px-8 py-5 text-sm'>mich@gmail.com</td>
@@ -82,7 +85,7 @@ function Users() {
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100 whitespace-nowrap'>
                                 <td className='px-8 py-5 text-sm  '>U-008</td>
                                 <td className='px-8 py-5 text-sm flex items-center'>                                    
-                                    <img src={profile1} alt="" className='w-8 h-8 rounded-full object-cover mr-2' />
+                                    <img src={profile3} alt="" className='w-8 h-8 rounded-full object-cover mr-2' />
                                     <div className="text-sm px-2">Emily</div>
                                 </td>
                                 <td className='px-8 py-5 text-sm'>emily@gmail.com</td>
@@ -95,7 +98,7 @@ function Users() {
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100 whitespace-nowrap'>
                                 <td className='px-8 py-5 text-sm  '>U-009</td>
                                 <td className='px-8 py-5 text-sm flex items-center'>                                    
-                                    <img src={profile} alt="" className='w-8 h-8 rounded-full object-cover mr-2' />
+                                    <img src={profile4} alt="" className='w-8 h-8 rounded-full object-cover mr-2' />
                                     <div className="text-sm px-2">Brown</div>
                                 </td>
                                 <td className='px-8 py-5 text-sm'>brownn@gmail.com</td>
