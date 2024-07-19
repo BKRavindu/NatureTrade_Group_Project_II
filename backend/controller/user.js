@@ -7,8 +7,9 @@ const ErrorHandler = require("../utils/ErrorHandler");
 const User = require("../model/user");
 const jwt = require("jsonwebtoken");
 const sendMail = require("../utils/sendMail");
-const catchAsyncErrors = require("../middleware/catchAsyncErrors")
-const sendToken = require("../utils/jwtToken")
+const catchAsyncErrors = require("../middleware/catchAsyncErrors");
+const sendToken = require("../utils/jwtToken");
+require('dotenv').config(); // Ensure environment variables are loaded
 
 // Define the path to the uploads folder
 const uploadsPath = path.join("C:\\Users\\Asus\\Desktop\\store", "uploads");
@@ -53,8 +54,7 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
         const filename = req.file.filename;
         const fileUrl = path.join("/uploads", filename); // Ensuring the correct file path
 
-        // Create new user
-        const user = new User({
+        const userData = {
             name: name,
             email: email,
             password: password,
@@ -62,23 +62,21 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
                 public_id: filename,
                 url: fileUrl,
             },
-        });
+        };
 
-        await user.save();
-
-        const activationToken = createActivationToken(user);
+        const activationToken = createActivationToken(userData);
 
         const activationUrl = `http://localhost:3000/activation/${activationToken}`;
 
         try {
             await sendMail({
-                email: user.email,
+                email: userData.email,
                 subject: "Activate your account",
-                message: `Hello ${user.name}, please click on the link to activate your account: ${activationUrl}`,
+                message: `Hello ${userData.name}, please click on the link to activate your account: ${activationUrl}`,
             });
             res.status(201).json({
                 success: true,
-                message: `Please check your email: ${user.email} to activate your account!`,
+                message: `Please check your email: ${userData.email} to activate your account!`,
             });
         } catch (error) {
             return next(new ErrorHandler(error.message, 500));
@@ -91,34 +89,48 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
 });
 
 // Create activation token
-const createActivationToken = (user) => {
-    const payload = {
-        userId: user._id,
-        email: user.email,
-    };
-    return jwt.sign(payload, process.env.ACTIVATION_SECRET, {
+const createActivationToken = (userData) => {
+    return jwt.sign(userData, process.env.ACTIVATION_SECRET, {
         expiresIn: "5m",
     });
 };
 
-//active user
-router.post("/activation", catchAsyncErrors(async(req,res,next) => {
+// Activate user
+router.post("/activation", catchAsyncErrors(async (req, res, next) => {
     try {
-        const {activation_token} = req.body;
-        const newUser = jwt.verify(activation_token, process.env, ACTIVATION_SECRET);
-        if(!newUser){
-            return next(new ErrorHandler("Invalid token!",400));
+        const { activation_token } = req.body;
+
+        if (!activation_token) {
+            return next(new ErrorHandler("No token provided!", 400));
         }
-        const {name, email,password,avatar} = newUser;
-            User.create({
-                name,
-                email,
-                avatar,
-                password,
-            });
-            sendToken(newUser, 201, res);
+
+        const userData = jwt.verify(activation_token, process.env.ACTIVATION_SECRET);
+
+        if (!userData) {
+            return next(new ErrorHandler("Invalid or expired token!", 400));
+        }
+
+        const { name, email, password, avatar } = userData;
+
+        // Check if user already exists
+        const userEmail = await User.findOne({ email });
+
+        if (userEmail) {
+            return next(new ErrorHandler("User already exists", 400));
+        }
+
+        const user = await User.create({
+            name,
+            email,
+            avatar,
+            password,
+        });
+
+        sendToken(user, 201, res);
+
     } catch (error) {
-        return next(new ErrorHandler(error.message,500));
+        console.error("Activation error:", error);
+        return next(new ErrorHandler(error.message, 500));
     }
 }));
 
