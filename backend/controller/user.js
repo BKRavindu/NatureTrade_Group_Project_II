@@ -7,6 +7,8 @@ const ErrorHandler = require("../utils/ErrorHandler");
 const User = require("../model/user");
 const jwt = require("jsonwebtoken");
 const sendMail = require("../utils/sendMail");
+const catchAsyncErrors = require("../middleware/catchAsyncErrors")
+const sendToken = require("../utils/jwtToken")
 
 // Define the path to the uploads folder
 const uploadsPath = path.join("C:\\Users\\Asus\\Desktop\\store", "uploads");
@@ -42,8 +44,6 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
                 if (err) {
                     console.log(err);
                     return res.status(500).json({ message: "Error deleting file" });
-                } else {
-                    console.log("File deleted successfully!");
                 }
             });
 
@@ -100,6 +100,27 @@ const createActivationToken = (user) => {
         expiresIn: "5m",
     });
 };
+
+//active user
+router.post("/activation", catchAsyncErrors(async(req,res,next) => {
+    try {
+        const {activation_token} = req.body;
+        const newUser = jwt.verify(activation_token, process.env, ACTIVATION_SECRET);
+        if(!newUser){
+            return next(new ErrorHandler("Invalid token!",400));
+        }
+        const {name, email,password,avatar} = newUser;
+            User.create({
+                name,
+                email,
+                avatar,
+                password,
+            });
+            sendToken(newUser, 201, res);
+    } catch (error) {
+        return next(new ErrorHandler(error.message,500));
+    }
+}));
 
 // Export the router
 module.exports = router;

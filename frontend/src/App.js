@@ -60,6 +60,7 @@ function App() {
         <Route path="/Requests" element={<Requests/>}/>
         <Route path="/Store" element={<Store/>}/>
         <Route path="/Admin/Profile" element={<Profile/>}/>
+        <Route path="/activation/:activation_token" element={<ActivationPage /> } />
       </Routes>
     </BrowserRouter>
     
