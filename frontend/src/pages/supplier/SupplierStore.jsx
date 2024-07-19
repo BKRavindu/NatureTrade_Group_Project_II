@@ -23,7 +23,7 @@ import ginger from '../../assets/ginger.jpg';
 
 
 
-function SupplierDash() {
+function SupplierStore() {
 
     const tr = {
         padding: '0.5rem',
@@ -55,8 +55,6 @@ function SupplierDash() {
                 <div className="flex gap-1 justify-between items-center mt-4 ">
                     
                 <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-50 h-20 mt-10  rounded-full p-3' />
-
                         <img src={cinnamon} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                             Cinnamon
@@ -65,89 +63,35 @@ function SupplierDash() {
                     </div>
 
                     <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
                         <img src={pepper} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
+                            Pepper
+                        <span className="text-xs font-normal">Pepper</span>
                         </div>
                     </div>
 
                     <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
                         <img src={clove} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
+                            Clove
+                        <span className="text-xs font-normal">Clove</span>
                         </div>
                     </div>
 
                     <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
                         <img src={nutmeg} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
+                            Nutmeg
+                        <span className="text-xs font-normal">Nutmeg</span>
                         </div>
                     </div>
-                    <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
-                        </div>
-                    </div>              
-        
+
+    
                 </div>
 
-                <div className="flex gap-1 justify-between items-center mt-4 ">  
-                <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <img src={cinnamon} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
-                        <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
-                        </div>
-                    </div>
-
-                    <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <img src={pepper} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
-                        <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
-                        </div>
-                    </div>
-
-                    <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <img src={clove} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
-                        <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
-                        </div>
-                    </div>
-
-                    <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <img src={nutmeg} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
-                        <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
-                        </div>
-                    </div>
-                    <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
-                        </div>
-                    </div>      
-                </div>
                 <div className="flex gap-1 justify-between items-center mt-4 ">
                     
                 <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
                         <img src={cinnamon} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                             Cinnamon
@@ -156,47 +100,70 @@ function SupplierDash() {
                     </div>
 
                     <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
                         <img src={pepper} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
+                            Pepper
+                        <span className="text-xs font-normal">Pepper</span>
                         </div>
                     </div>
 
                     <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
-                        </div>
-                    </div>
-
-                    <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
                         <img src={clove} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
-                            Cinnamon
-                        <span className="text-xs font-normal">Cinnamon</span>
+                            Clove
+                        <span className="text-xs font-normal">Clove</span>
                         </div>
                     </div>
 
                     <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
-                        <img src={cinnamon} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
                         <img src={nutmeg} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
+                        <div className="text-xl font-semibold flex flex-col items-center">
+                            Nutmeg
+                        <span className="text-xs font-normal">Nutmeg</span>
+                        </div>
+                    </div>
+
+    
+                </div>
+
+                <div className="flex gap-1 justify-between items-center mt-4 ">
+                    
+                <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
+                        <img src={cinnamon} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                             Cinnamon
                         <span className="text-xs font-normal">Cinnamon</span>
                         </div>
                     </div>
 
+                    <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
+                        <img src={pepper} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
+                        <div className="text-xl font-semibold flex flex-col items-center">
+                            Pepper
+                        <span className="text-xs font-normal">Pepper</span>
+                        </div>
+                    </div>
 
-                    
-                    
+                    <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
+                        <img src={clove} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
+                        <div className="text-xl font-semibold flex flex-col items-center">
+                            Clove
+                        <span className="text-xs font-normal">Clove</span>
+                        </div>
+                    </div>
+
+                    <div className="w-30 h-30 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2x1 shadow-lg">
+                        <img src={nutmeg} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
+                        <div className="text-xl font-semibold flex flex-col items-center">
+                            Nutmeg
+                        <span className="text-xs font-normal">Nutmeg</span>
+                        </div>
+                    </div>
+
+    
                 </div>
+                    
+                    
                 {/* <div className="flex flex-col gap-3 bg-white my-7 p-5 rounded-lg shadow-lg"> */}
                     {/* <div className="flex justify-between">
                         <div className="font-semibold text-xl">Recent Orders</div>
@@ -254,4 +221,4 @@ function SupplierDash() {
   )
 }
 
-export default SupplierDash
+export default SupplierStore

@@ -1,11 +1,8 @@
 import React from 'react'
-import NavBar from '../../components/deliveryCompany/NavBar'
-import SideBar from '../../components/deliveryCompany/SideBar'
 import NavBar from '../../components/supplier/NavBar'
 import SideBar from '../../components/supplier/SideBar'
 
-
-function Order() {
+function Requests() {
   return (
     <>
         <NavBar />
@@ -47,20 +44,16 @@ function Order() {
                                 <td className='px-8 py-5 text-sm'>Paid</td>
                                 <td className="px-8 py-5 text-sm">
                             <button className="bg-green-600 text-black font-semibold rounded px-4 py-2">
-
-                                    Processing
-                                </button>
-                            </td>                            
                                     Processing̥
                                 </button>
-                            </td>                    
+                            </td>
+                        
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>006</td>
                                 <td className='px-8 py-5 text-sm'>2024-04-01</td>
                                 <td className='px-8 py-5 text-sm'>3.30 PM</td>
                                 <td className='px-8 py-5 text-sm'>Cinnamon</td>
-                                <td className='px-8 py-5 text-sm'><span className='bg-red-500 text-black font-semibold rounded px-4 py-2'>Cancelled</span></td>
                                 <td className='px-8 py-5 text-sm'><span className='bg-yellow-500 text-black font-semibold rounded px-4 py-2'>Cancelled</span></td>
                                
                             </tr>
@@ -105,4 +98,4 @@ function Order() {
   )
 }
 
-export default Order
+export default Requests
