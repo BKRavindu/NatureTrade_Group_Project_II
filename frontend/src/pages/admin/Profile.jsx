@@ -28,7 +28,7 @@ function Profile() {
                             <div className="font-normal text-md text-gray-400">Update your profile photo and details here.</div>
                         </div>
                         <div className="flex gap-2 justify-end items-end">
-                            <button className="font-normal text-xl border border-gray-300 bg-gray-100 text-gray-700 py-1 px-3 rounded-md hover:bg-gray-200">Cancel</button>
+                            <button className="font-normal text-xl border border-gray-500 border-2 bg-gray-200 text-gray-700 py-1 px-3 rounded-md hover:bg-gray-500 hover:text-white">Cancel</button>
                             <button className='font-normal border border-2 text-green-600 border-green-600 text-xl py-1 px-3 rounded-md hover:bg-green-600 hover:text-white'>
                                 Update
                             </button>
