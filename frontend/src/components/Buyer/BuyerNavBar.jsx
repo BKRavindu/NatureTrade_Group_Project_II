@@ -3,7 +3,7 @@ import logo from '../../assets/Untitled design (1) 1.svg';
 import tab from '../../assets/Glyph.png';
 import profile from '../../assets/images.jpeg';
 
-function NavBar() {
+function BuyerNavBar() {
   return (
     <>
     <nav className="flex sticky top-0 bg-white w-full h-20 items-center px-4">
@@ -22,9 +22,8 @@ function NavBar() {
         <i className='bx bxs-bell text-xl'></i>
         <i className='bx bxs-moon text-xl'></i>
         <div className="flex flex-col items-left p-2">
-          <div className="text-md font-semibold">John</div>
-          <div className="text-md font-semibold">Mike</div>
-          <div className="text-sm font-ligh">Supplier</div>
+          <div className="text-md font-semibold">Lakshi</div>
+          <div className="text-sm font-ligh">Buyer</div>
         </div>
         <img src={profile} alt="Profile" className='w-12 h-12 rounded-full object-cover' />
       </div>
@@ -34,4 +33,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default BuyerNavBar;

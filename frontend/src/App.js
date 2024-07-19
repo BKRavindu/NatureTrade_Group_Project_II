@@ -8,6 +8,10 @@ import Order from './pages/deliveryCompany/Order';
 import Subscription from './pages/deliveryCompany/Subscription';
 import SubscriptionActive from './pages/deliveryCompany/SubscriptionActive';
 import CollectorDash from './pages/CollectingCenter/CollectorDash';
+import BuyerDash from './pages/Buyer/BuyerDash';
+import BOrders from './pages/Buyer/BOrders';
+import BCollectingcenter from './pages/Buyer/BCollectingcenter';
+import BDelivery from './pages/Buyer/BDelivery';
 import AdminDash from './pages/admin/AdminDash';
 import Users from './pages/admin/Users';
 import ViewUser from './pages/admin/ViewUser';
@@ -38,11 +42,15 @@ function App() {
         <Route path="/Admin/Contact" element={<Contact/>}/>
         <Route path="/Admin/Centers" element={<Centers/>}/>
         <Route path="/CollectorDash" element={<CollectorDash/>}/>
+        <Route path="/CollectorStore" element={<CollectorStore/>}
+        <Route path="/BuyerDash" element={<BuyerDash/>}/>
+        <Route path="/BOrders" element={<BOrders/>}/>
+        <Route path="/BCollectingcenter" element={<BCollectingcenter/>}/>
+        <Route path="/BDelivery" element={<BDelivery/>}/>
         <Route path="/SupplierDash" element={<SupplierDash/>}/>
         <Route path="/Requests" element={<Requests/>}/>
         <Route path="/Store" element={<Store/>}/>
         <Route path="/Admin/Profile" element={<Profile/>}/>
-
       </Routes>
     </BrowserRouter>
     

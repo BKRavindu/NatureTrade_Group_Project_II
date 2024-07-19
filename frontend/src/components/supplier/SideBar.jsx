@@ -6,6 +6,7 @@ function SideBar() {
         <div className="bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] ">
             <i className='bx bxs-dashboard text-gray-700 text-xl'></i>
             <span className='font-sans ml-4 font-light'>Dashboard</span>
+            <span className='font-sans ml-4 font-semibold-600'>Dashboard</span>
         </div>
 
     
@@ -28,6 +29,23 @@ function SideBar() {
       <div className="p-2 flex items-center">
         <i className='bx bx-log-out text-gray-700 text-xl'></i>
         <span className='font-sans ml-4 font-light'>Logout</span>
+        <span className='font-sans ml-4 font-semibold-600'>Requests</span>
+      </div>
+      <div className="p-2 flex items-center">
+        <i className='bx bx-store text-gray-700 text-xl'></i>
+        <span className='font-sans ml-4 font-semibold-600'>Store</span>
+      </div>
+      <div className="p-2 flex items-center">
+        <i className='bx bx-chat text-gray-700 text-xl'></i>
+        <span className='font-sans ml-4 font-semibold-600'>Contact</span>
+      </div>
+      <div className="p-2 flex items-center">
+        <i className='bx bx-user text-gray-700 text-xl'></i>
+        <span className='font-sans ml-4 font-semibold-600'>Profile</span>
+      </div>
+      <div className="p-2 flex items-center">
+        <i className='bx bx-log-out text-gray-700 text-xl'></i>
+        <span className='font-sans ml-4 font-semibold-600'>Logout</span>
       </div>
     </div>
   )
