@@ -148,6 +148,7 @@ function SupplierDash() {
                 
             </div>
         </div>
+        </div>
     </>
   )
 }

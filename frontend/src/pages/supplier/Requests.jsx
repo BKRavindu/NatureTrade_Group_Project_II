@@ -1,6 +1,6 @@
 import React from 'react'
-import NavBar from '../../components/deliveryCompany/NavBar'
-import SideBar from '../../components/deliveryCompany/SideBar'
+// import NavBar from '../../components/deliveryCompany/NavBar'
+// import SideBar from '../../components/deliveryCompany/SideBar'
 import NavBar from '../../components/supplier/NavBar'
 import SideBar from '../../components/supplier/SideBar'
 
@@ -51,9 +51,9 @@ function Order() {
                                     Processing
                                 </button>
                             </td>                            
-                                    Processing̥
+                                    {/* Processing̥
                                 </button>
-                            </td>                    
+                            </td>                     */}
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>006</td>

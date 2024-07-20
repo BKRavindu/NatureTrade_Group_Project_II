@@ -40,8 +40,8 @@ function App() {
         <Route path="/Admin/ViewUser" element={<ViewUser/>}/>
         <Route path="/Admin/Contact" element={<Contact/>}/>
         <Route path="/Admin/Centers" element={<Centers/>}/>
-        <Route path="/CollectorDash" element={<CollectorDash/>}/>
-        <Route path="/CollectorStore" element={<CollectorStore/>}
+        <Route path="/Collector/CollectorDash" element={<CollectorDash/>}/>
+        <Route path="/Collector/CollectorStore" element={<CollectorStore/>}/>
         <Route path="/BuyerDash" element={<BuyerDash/>}/>
         <Route path="/BOrders" element={<BOrders/>}/>
         <Route path="/BCollectingcenter" element={<BCollectingcenter/>}/>
