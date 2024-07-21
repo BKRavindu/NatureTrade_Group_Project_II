@@ -58,7 +58,6 @@ function App() {
         <Route path="/supplier/SupplierProfile" element={<SupplierProfile/>}/>
         <Route path="/SupplierDash" element={<SupplierDash/>}/>
         <Route path="/Requests" element={<Requests/>}/>
-        <Route path="/Store" element={<Store/>}/>
         <Route path="/Admin/Profile" element={<Profile/>}/>
       </Routes>
     </BrowserRouter>
