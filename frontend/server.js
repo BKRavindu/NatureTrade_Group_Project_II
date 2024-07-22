@@ -1,1 +1,0 @@
-export const server = "http://localhost:PORT/api/v2";
