@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'></link>
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,7 +9,6 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
 
 
 reportWebVitals();
