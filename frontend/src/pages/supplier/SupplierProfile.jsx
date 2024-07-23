@@ -12,11 +12,11 @@ const SupplierProfile = () => {
             <SideBar />
             <div className="flex flex-col flex-1 mr-3">
                 <div className="flex flex-col">
-                    <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Profile</div>
+                    <div className="font-semibold text-2xl mb-2 -mt-12 mb-5">Profile</div>
                     <div className="flex flex-row gap-3">
 
-                        <div className="font-normal text-gray-400 text-lg">Dashboard</div>{">"}
-                        <div className="font-normal text-lg">Profile</div>
+                        <div className="font-normal text-gray-400 text-xl">Dashboard</div>{">"}
+                        <div className="font-normal text-xl">Profile</div>
                     </div>
                 </div>
                 <div className="flex gap-3-p-4 rounded-lg bg-white shadow-lg mt-4 p-10 gap-14 mr-4">
