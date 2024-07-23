@@ -30,6 +30,10 @@ import Advertisments from './pages/supplier/Advertisments.jsx';
 import SupplierContact from './pages/supplier/SupplierContact.jsx'
 import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
 import Homepage from './components/Homepage/Homepage.jsx';
+import SupplierContact from './pages/supplier/SupplierContact.jsx';
+import SupplierProfile from './pages/supplier/SupplierProfile.jsx';
+import CustomToastContainer from './components/CustomToastContainer';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -74,6 +78,8 @@ function App() {
         <Route path="/SupplierDash" element={<SupplierDash/>}/>
         <Route path="/Requests" element={<Requests/>}/>
         <Route path="/Admin/Profile" element={<Profile/>}/>
+        <Route path="/activation/:activation_token" element={<ActivationPage /> } />
+        <CustomToastContainer />
       </Routes>
     </BrowserRouter>
     
