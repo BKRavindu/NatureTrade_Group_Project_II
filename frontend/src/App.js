@@ -23,8 +23,10 @@ import SupplierDash from './pages/supplier/SupplierDash.jsx';
 import Requests from './pages/supplier/Requests.jsx';
 import SupplierStore from './pages/supplier/SupplierStore.jsx'
 import Advertisments from './pages/supplier/Advertisments.jsx';
-import SupplierContact from './pages/supplier/SupplierContact.jsx'
-import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
+import SupplierContact from './pages/supplier/SupplierContact.jsx';
+import SupplierProfile from './pages/supplier/SupplierProfile.jsx';
+import CustomToastContainer from './components/CustomToastContainer';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -60,6 +62,7 @@ function App() {
         <Route path="/Requests" element={<Requests/>}/>
         <Route path="/Admin/Profile" element={<Profile/>}/>
         <Route path="/activation/:activation_token" element={<ActivationPage /> } />
+        <CustomToastContainer />
       </Routes>
     </BrowserRouter>
     

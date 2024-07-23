@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import {RxAvatar} from 'react-icons/rx';
 import { server } from "../../server";
 import axios from "axios";
+import { toast } from 'react-toastify';
 
 
 const SignUp = () => {
@@ -35,7 +36,8 @@ const SignUp = () => {
         axios.post(`${server}/user/create-user`,newForm, config).then((res) => {
             console.log(res)
         }).catch((err) => {
-            console.log(err);
+            console.log(error.response.data.message)
+            toast.error("User already exist");
         });
     };
 
