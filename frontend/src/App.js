@@ -1,5 +1,9 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { Link } from 'react-router-dom';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 import {LoginPage, SignUpPage} from "./Routes.js";
 import SupplierSignUp from './components/SupplierSignUp.jsx';
 import DeliveryDash from './pages/deliveryCompany/DeliveryDash';
@@ -25,12 +29,23 @@ import SupplierStore from './pages/supplier/SupplierStore.jsx'
 import Advertisments from './pages/supplier/Advertisments.jsx';
 import SupplierContact from './pages/supplier/SupplierContact.jsx'
 import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
-
+import Homepage from './components/Homepage/Homepage.jsx';
 
 function App() {
+
+  useEffect(()=>{
+    AOS.init({
+      offset: 100,
+      duration: 700,
+      easing: "ease-in",
+      delay: 100,
+    })
+})
+
   return (
     <BrowserRouter>
       <Routes>
+      <Route exact path="/" element={<Homepage />}/>
         <Route path="/login" element={<LoginPage /> } />
         <Route path="/sign-up" element={<SignUpPage /> } />
         <Route path="/supplier-sign-up" element={<SupplierSignUp />} />
