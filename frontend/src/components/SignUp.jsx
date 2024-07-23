@@ -34,10 +34,9 @@ const SignUp = () => {
         newForm.append("password", password);
 
         axios.post(`${server}/user/create-user`,newForm, config).then((res) => {
-            console.log(res)
+            toast.success(res.data.message);
         }).catch((err) => {
-            console.log(error.response.data.message)
-            toast.error("User already exist");
+            toast.error(err.response.data.message);
         });
     };
 
