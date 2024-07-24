@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import NavBar from "../../components/admin/NavBar";
 
 export default function AdminDash() {
-    const tr = {
-       
-
-    }
+  const tr = {};
   return (
-    <div>AdminDash</div>
-  )
+    <>
+      <NavBar />
+      <div>AdminDash</div>
+    </>
+  );
 }
