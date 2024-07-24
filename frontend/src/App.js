@@ -5,6 +5,7 @@ import SupplierSignUp from './components/SupplierSignUp.jsx';
 import DeliveryDash from './pages/deliveryCompany/DeliveryDash';
 import OrderView from './pages/deliveryCompany/OrderView';
 import Order from './pages/deliveryCompany/Order';
+import ViewChat from './pages/admin/ViewChat.jsx';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/DeliveryDash" element={<DeliveryDash />} />
         <Route path="/OrderView" element={<OrderView />} />
         <Route path="/Order" element={<Order />} />
+        <Route path="/viewChat" element={<ViewChat />} />
       </Routes>
     </BrowserRouter>
   );
