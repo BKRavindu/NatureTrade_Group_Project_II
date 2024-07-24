@@ -134,5 +134,33 @@ router.post("/activation", catchAsyncErrors(async (req, res, next) => {
     }
 }));
 
+// login user
+router.post("/login-user", catchAsyncErrors(async(req,res,next) => {
+    try {
+        const {email,password} = req.body;
+
+        if(!email || !password){
+            return next(new ErrorHandler("Please provide the all fields!",400));
+        }
+
+        const user = await User.findOne({email}).select("password");
+
+        if(!user){
+            return next(new ErrorHandler("user not exist!",400));
+        }
+
+        const isPasswordValid = await user.comparePassword(password);
+
+        if(!isPasswordValid){
+            return next(new ErrorHandler("Please provide valid password",400));
+        }
+
+        sendToken(user,200,res);
+
+    } catch (error) {
+        
+    }
+}))
+
 // Export the router
 module.exports = router;
