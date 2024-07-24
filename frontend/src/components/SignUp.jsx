@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import {RxAvatar} from 'react-icons/rx';
 import { server } from "../../server";
 import axios from "axios";
+import { toast } from 'react-toastify';
 
 
 const SignUp = () => {
@@ -33,9 +34,9 @@ const SignUp = () => {
         newForm.append("password", password);
 
         axios.post(`${server}/user/create-user`,newForm, config).then((res) => {
-            console.log(res)
+            toast.success(res.data.message);
         }).catch((err) => {
-            console.log(err);
+            toast.error(err.response.data.message);
         });
     };
 
