@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import {LoginPage, SignUpPage,ActivationPage} from "./Routes.js";
-import SupplierSignUp from './components/SupplierSignUp.jsx';
 import DeliveryDash from './pages/deliveryCompany/DeliveryDash';
 import OrderView from './pages/deliveryCompany/OrderView';
 import Order from './pages/deliveryCompany/Order';
@@ -50,7 +49,6 @@ function App() {
       <Route exact path="/" element={<Homepage />}/>
         <Route path="/login" element={<LoginPage /> } />
         <Route path="/sign-up" element={<SignUpPage /> } />
-        <Route path="/supplier-sign-up" element={<SupplierSignUp />} />
         <Route path="/Delivery/Dashboard" element={<DeliveryDash />} />
         <Route path="/Delivery/OrderView" element={<OrderView />} />
         <Route path="/Delivery/Order" element={<Order />} />
