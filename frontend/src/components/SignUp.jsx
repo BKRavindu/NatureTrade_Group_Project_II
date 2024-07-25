@@ -8,6 +8,8 @@ import Logo from "../assets/Logo.png";
 import styles from '../styles/styles';
 import RegisterImage from '../assets/RegisterImage.jpg'; // Add your register image here
 import { FaFileUpload } from "react-icons/fa";
+import { TbUserPlus } from "react-icons/tb";
+import { CiCircleQuestion } from "react-icons/ci";
 
 const SignUp = () => {
     const [name, setName] = useState("");
@@ -169,13 +171,15 @@ const SignUp = () => {
                                 </label>
                             </div>
                         </div>
-                        <div>
+                        <div className="flex justify-center items-center">
                             <button type="submit"
-                                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-700">
+                                className="group relative w-[200px] h-[40px] flex items-center justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-black bg-yellow-500 hover:bg-yellow-700">
+                                <TbUserPlus className="mr-2 text-black" size={30} />
                                 Submit
                             </button>
                         </div>
                         <div className={`${styles.Flex} w-full`}>
+                            <CiCircleQuestion className="mr-2 text-black" size={20}/>
                             <h4> Already have an account?</h4>
                             <Link to="/login" className="text-yellow-600 pl-2">
                                 Sign In
