@@ -9,7 +9,7 @@ function ViewChat() {
       <NavBar />
       <div className="flex">
         <SideBar />
-        <div className="flex flex-col flex-1">
+        <div className="flex flex-col flex-1 mx-[200px]">
           <div className="flex flex-col">
             <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Chat</div>
             <div className="flex flex-row gap-3">

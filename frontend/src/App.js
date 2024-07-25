@@ -18,8 +18,8 @@ function App() {
         <Route path="/DeliveryDash" element={<DeliveryDash />} />
         <Route path="/OrderView" element={<OrderView />} />
         <Route path="/Order" element={<Order />} />
-        <Route path="/ViewChat" element={<ViewChat />} />
-        <Route path="/AdminDash" element={<AdminDash />} />
+        <Route path="Admin/contact" element={<ViewChat />} />
+        <Route path="Admin/Dashboard" element={<AdminDash />} />
       </Routes>
     </BrowserRouter>
   );

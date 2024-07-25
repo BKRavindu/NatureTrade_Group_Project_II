@@ -7,8 +7,12 @@ export default function AdminDash() {
   return (
     <>
       <NavBar />
-      <SideBar/>
-      <div>AdminDash</div>
+      <div className="flex">
+        <SideBar />
+        <div className="flex flex-col flex-1 mx-[250px]">
+          <div>admin dash</div>
+        </div>
+      </div>
     </>
   );
 }
