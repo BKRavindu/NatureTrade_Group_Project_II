@@ -5,7 +5,7 @@ import SignUp from "../../components/SignUp.jsx";
 const SignUpPage = () => {
   return (
     <div>
-        <SignUpPage />
+        <SignUp />
     </div>
   )
 }

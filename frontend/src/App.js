@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
-import {LoginPage, SignUpPage} from "./Routes.js";
+import {LoginPage, SignUpPage,ActivationPage} from "./Routes.js";
 import SupplierSignUp from './components/SupplierSignUp.jsx';
 import DeliveryDash from './pages/deliveryCompany/DeliveryDash';
 import OrderView from './pages/deliveryCompany/OrderView';
@@ -30,10 +30,8 @@ import Advertisments from './pages/supplier/Advertisments.jsx';
 import SupplierContact from './pages/supplier/SupplierContact.jsx'
 import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
 import Homepage from './components/Homepage/Homepage.jsx';
-import SupplierContact from './pages/supplier/SupplierContact.jsx';
-import SupplierProfile from './pages/supplier/SupplierProfile.jsx';
 import CustomToastContainer from './components/CustomToastContainer';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
 
@@ -79,8 +77,8 @@ function App() {
         <Route path="/Requests" element={<Requests/>}/>
         <Route path="/Admin/Profile" element={<Profile/>}/>
         <Route path="/activation/:activation_token" element={<ActivationPage /> } />
-        <CustomToastContainer />
       </Routes>
+      <CustomToastContainer />
     </BrowserRouter>
     
   );
