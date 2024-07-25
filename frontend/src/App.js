@@ -22,7 +22,7 @@ import ViewUser from './pages/admin/ViewUser';
 import Contact from './pages/admin/Contact';
 import Centers from './pages/admin/Centers';
 import Profile from './pages/admin/Profile';
-import ViewChat from './pages/admin/viewChat.jsx';
+import ViewChat from './pages/admin/ViewChat.jsx';
 import SupplierDash from './pages/supplier/SupplierDash.jsx';
 import Requests from './pages/supplier/Requests.jsx';
 import SupplierStore from './pages/supplier/SupplierStore.jsx'
