@@ -9,7 +9,10 @@ const jwt = require("jsonwebtoken");
 const sendMail = require("../utils/sendMail");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const sendToken = require("../utils/jwtToken");
-require('dotenv').config(); // Ensure environment variables are loaded
+const { isAuthenticated } = require("../middleware/auth");
+require('dotenv').config();
+
+
 
 // Define the path to the uploads folder
 const uploadsPath = path.join("C:\\Users\\Asus\\Desktop\\store", "uploads");
@@ -91,7 +94,7 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
 // Create activation token
 const createActivationToken = (userData) => {
     return jwt.sign(userData, process.env.ACTIVATION_SECRET, {
-        expiresIn: "5m",
+        expiresIn: "15m",
     });
 };
 
@@ -157,6 +160,25 @@ router.post("/login-user", catchAsyncErrors(async (req, res, next) => {
 
     sendToken(user, 200, res);
 }));
+
+//load user
+/*router.get("/getuser", isAuthenticated, catchAsyncErrors(async(req,res,next) => {
+    try {
+        const user = await User.findById(req.user.id);
+
+        if(!user){
+            return next(new ErrorHandler("User doesn't exists",400));
+        }
+
+        res.status(200).json({
+            success:true,
+            user,
+        });
+
+    } catch (error) {
+        return next(new ErrorHandler(error.message,500));
+    }
+}));*/
 
 
 // Export the router
