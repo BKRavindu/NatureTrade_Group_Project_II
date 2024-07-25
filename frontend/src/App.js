@@ -7,6 +7,7 @@ import OrderView from './pages/deliveryCompany/OrderView';
 import Order from './pages/deliveryCompany/Order';
 import ViewChat from './pages/admin/ViewChat.jsx';
 import AdminDash from './pages/admin/AdminDash.jsx';
+import DashboardAdmin from './pages/admin/AdminDash_copy.jsx';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Order" element={<Order />} />
         <Route path="Admin/contact" element={<ViewChat />} />
         <Route path="Admin/Dashboard" element={<AdminDash />} />
+        <Route path="Admin/testDash" element={<DashboardAdmin/>} />
       </Routes>
     </BrowserRouter>
   );
