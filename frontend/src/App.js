@@ -26,7 +26,7 @@ import Profile from './pages/admin/Profile';
 import SupplierDash from './pages/supplier/SupplierDash.jsx';
 import Requests from './pages/supplier/Requests.jsx';
 import SupplierStore from './pages/supplier/SupplierStore.jsx'
-import Advertisments from './pages/supplier/Advertisments.jsx';
+import Advertisements from './pages/supplier/Advertisements.jsx';
 import SupplierContact from './pages/supplier/SupplierContact.jsx'
 import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
 import Homepage from './components/Homepage/Homepage.jsx';
@@ -72,7 +72,7 @@ function App() {
         <Route path="/supplier/Dashboard" element={<SupplierDash/>}/>
         <Route path="/supplier/Requests" element={<Requests/>}/>
         <Route path="/supplier/SupplierStore" element={<SupplierStore/>}/>
-        <Route path="/supplier/Advertisments" element={<Advertisments/>}/>
+        <Route path="/supplier/Advertisements" element={<Advertisements/>}/>
         <Route path="/supplier/SupplierContact" element={<SupplierContact/>}/>
         <Route path="/supplier/SupplierProfile" element={<SupplierProfile/>}/>
         <Route path="/SupplierDash" element={<SupplierDash/>}/>

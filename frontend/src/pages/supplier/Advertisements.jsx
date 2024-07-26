@@ -3,7 +3,7 @@ import SideBar from '../../components/supplier/SideBar'
 import NavBar from '../../components/supplier/NavBar'
 import logo from '../../assets/Untitled design (1) 1.svg';
 import {Link} from 'react-router-dom'
-const Advertisments = () => {
+const Advertisements = () => {
     return (
         <>
             <NavBar />
@@ -106,4 +106,4 @@ const Advertisments = () => {
       )
     }
     
-export default Advertisments
+export default Advertisements
