@@ -18,6 +18,7 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState("");
     const [visible, setVisible] = useState(false);
     const [avatar, setAvatar] = useState(null);
+    const [role, setRole] = useState(""); // State for user role
     const [errors, setErrors] = useState({});
 
     const handleFileInputChange = (e) => {
@@ -52,6 +53,7 @@ const SignUp = () => {
         newForm.append("name", name);
         newForm.append("email", email);
         newForm.append("password", password);
+        newForm.append("role", role); // Append the role to the form data
 
         axios.post(`${server}/user/create-user`, newForm, config)
             .then((res) => {
@@ -61,6 +63,7 @@ const SignUp = () => {
                 setPassword("");
                 setConfirmPassword("");
                 setAvatar(null);
+                setRole("");
                 setErrors({});
             })
             .catch((error) => {
@@ -73,15 +76,15 @@ const SignUp = () => {
             <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-4xl flex">
                 <div className="bg-white py-8 px-4 shadow  sm:px-10 w-full lg:w-1/2">
                     <form className="space-y-5" onSubmit={handleSubmit}>
-                    <div className="flex items-center justify-center mb-4">
-                        <img className="h-12 w-auto mr-2" src={Logo} alt="NatureTrade" />
-                        <h2 className="text-2xl font-bold">Nature Trade</h2>
-                    </div>
-                    <div className='sm:mx-auto sm:w-full sm:max-w-md'>
-                        <h2 className='mt-4 text-center text-2xl font-bold text-gray-900'>
-                            Register as new Collector
-                        </h2>
-                    </div>
+                        <div className="flex items-center justify-center mb-4">
+                            <img className="h-12 w-auto mr-2" src={Logo} alt="NatureTrade" />
+                            <h2 className="text-2xl font-bold">Nature Trade</h2>
+                        </div>
+                        <div className='sm:mx-auto sm:w-full sm:max-w-md'>
+                            <h2 className='mt-4 text-center text-2xl font-bold text-gray-900'>
+                                Register as new Collector
+                            </h2>
+                        </div>
                         <div className="relative">
                             <AiOutlineUser className="absolute left-3 top-2.5 text-gray-400" size={20} />
                             <input
@@ -145,32 +148,53 @@ const SignUp = () => {
                                 <p className="text-red-500 text-sm mt-1">{errors.confirmPassword}</p>
                             )}
                         </div>
-                        <div>
-                            <label htmlFor="avatar" className="block text-sm font-medium text-gray-700">
-                            Business registration certificate 
+                        <div className="relative">
+                            <label htmlFor="role" className="block text-sm font-medium text-gray-700">
+                                Select Role
                             </label>
-                            <div className="mt-2 flex items-center">
-                                <span className="inline-block h-8 w-8 overflow-hidden">
-                                    {avatar ? (
-                                        <img src={URL.createObjectURL(avatar)} alt="avatar" className="h-full w-full object-cover rounded-full" />
-                                    ) : (
-                                        <FaFileUpload className="h-8 w-8" />
-                                    )}
-                                </span>
-                                <label htmlFor="file-input"
-                                    className='ml-5 flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-50  bg-gray-100'>
-                                    <span>Upload certificate</span>
-                                    <input
-                                        type="file"
-                                        name="avatar"
-                                        id="file-input"
-                                        accept='.jpg, .jpeg, .png'
-                                        onChange={handleFileInputChange}
-                                        className='sr-only'
-                                    />
-                                </label>
-                            </div>
+                            <select
+                                id="role"
+                                name="role"
+                                value={role}
+                                onChange={(e) => setRole(e.target.value)}
+                                required
+                                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md bg-gray-100"
+                            >
+                                <option value="">Select role</option>
+                                <option value="seller">Seller</option>
+                                <option value="buyer">Buyer</option>
+                                <option value="supplier">Supplier</option>
+                                <option value="delivery">Delivery Company</option>
+                            </select>
                         </div>
+                        {role === "seller" && (
+                            <div>
+                                <label htmlFor="avatar" className="block text-sm font-medium text-gray-700">
+                                    Business registration certificate 
+                                </label>
+                                <div className="mt-2 flex items-center">
+                                    <span className="inline-block h-8 w-8 overflow-hidden">
+                                        {avatar ? (
+                                            <img src={URL.createObjectURL(avatar)} alt="avatar" className="h-full w-full object-cover rounded-full" />
+                                        ) : (
+                                            <FaFileUpload className="h-8 w-8" />
+                                        )}
+                                    </span>
+                                    <label htmlFor="file-input"
+                                        className='ml-5 flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-50  bg-gray-100'>
+                                        <span>Upload certificate</span>
+                                        <input
+                                            type="file"
+                                            name="avatar"
+                                            id="file-input"
+                                            accept='.jpg, .jpeg, .png'
+                                            onChange={handleFileInputChange}
+                                            className='sr-only'
+                                        />
+                                    </label>
+                                </div>
+                            </div>
+                        )}
                         <div className="flex justify-center items-center">
                             <button type="submit"
                                 className="group relative w-[200px] h-[40px] flex items-center justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-black bg-yellow-500 hover:bg-yellow-700">

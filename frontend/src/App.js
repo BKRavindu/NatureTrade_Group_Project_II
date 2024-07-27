@@ -49,7 +49,7 @@ function App() {
       <Route exact path="/" element={<Homepage />}/>
         <Route path="/login" element={<LoginPage /> } />
         <Route path="/sign-up" element={<SignUpPage /> } />
-        <Route path="/Delivery/Dashboard" element={<DeliveryDash />} />
+        <Route path="/DeliveryDashboard" element={<DeliveryDash />} />
         <Route path="/Delivery/OrderView" element={<OrderView />} />
         <Route path="/Delivery/Order" element={<Order />} />
         <Route path="/Delivery/Subscription" element={<Subscription />} />

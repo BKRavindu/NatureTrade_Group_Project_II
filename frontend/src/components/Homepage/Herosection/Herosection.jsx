@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from "../../../assets/Hero.png";
+import { Link } from 'react-router-dom';
 
 
 const Herosection = () => {
@@ -27,7 +28,9 @@ const Herosection = () => {
               </h1>
               <div data-aos="fade-up" data-aos-delay="400">
               <button className="bg-primary border-primary hover:scale-105 duration-200 text-black border-4 border-black text-xl py-2 px-4 rounded-full">
-                Register Now!
+                  <Link to="/sign-up">
+                    Register Now!
+                  </Link>
               </button>
               </div>
             </div>
