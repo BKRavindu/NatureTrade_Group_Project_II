@@ -22,6 +22,7 @@ import ViewUser from './pages/admin/ViewUser';
 import Contact from './pages/admin/Contact';
 import Centers from './pages/admin/Centers';
 import Profile from './pages/admin/Profile';
+import ViewChat from './pages/admin/ViewChat.jsx';
 import SupplierDash from './pages/supplier/SupplierDash.jsx';
 import Requests from './pages/supplier/Requests.jsx';
 import SupplierStore from './pages/supplier/SupplierStore.jsx'
@@ -30,6 +31,7 @@ import SupplierContact from './pages/supplier/SupplierContact.jsx'
 import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
 import Homepage from './components/Homepage/Homepage.jsx';
 import CustomToastContainer from './components/CustomToastContainer';
+
 
 
 function App() {
@@ -59,6 +61,7 @@ function App() {
         <Route path="/Admin/ViewUser" element={<ViewUser/>}/>
         <Route path="/Admin/Contact" element={<Contact/>}/>
         <Route path="/Admin/Centers" element={<Centers/>}/>
+        <Route path="/Admin/ViewChat" element={<ViewChat/>}/>
         <Route path="/CollectorDash" element={<CollectorDash/>}/>
         <Route path="/CollectorStore" element={<CollectorStore/>}/>
         <Route path="/BuyerDash" element={<BuyerDash/>}/>
