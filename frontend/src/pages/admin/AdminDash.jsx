@@ -31,7 +31,7 @@ export default function AdminDash() {
 
           {/* Hero welcome================ */}
           <div className="flex justify-between items-center p-4 bg-white mt-4 rounded-lg border-gray-300 rounded-2xl shadow-lg">
-            <div className="flex flex-col gap-4 flex-col">
+            <div className="flex flex-col gap-4 flex-col ml-20">
               <div className="text-6xl font-normal">
                 Welcome, <span className="font-light text-2xl">Admin</span>
               </div>
@@ -40,7 +40,7 @@ export default function AdminDash() {
                 <span className="text-red-500">7</span> Pending Approval.
               </div>
             </div>
-            <img src={HeaderPic} alt="" className="w-[300px] h-[150px]" />
+            <img src={HeaderPic} alt="" className="w-[300px] h-[150px] mr-20" />
           </div>
           {/* ============================ */}
 
@@ -60,8 +60,8 @@ export default function AdminDash() {
               </div>
             </div>
 
-            <div className="flex flex-row gap-4 justify-center items-center mt-4 p-8 bg-white border-gray-300 rounded-2xl shadow-lg w-1/4">
-              <img src={item3} alt="" className="w-20 h-20" />
+            <div className="flex flex-row gap-4 justify-center items-center mt-4 p-4 bg-white border-gray-300 rounded-2xl shadow-lg w-1/4">
+              <img src={item3} alt="" className="w-24 h-24" />
               <div className="text-5xl font-bold">
                 4M <span className="text-xl font-normal">Revenue</span>
               </div>
@@ -71,12 +71,14 @@ export default function AdminDash() {
 
           {/* Chart Section================ */}
           <div className="flex flex-col gap-3 bg-white my-7 p-5 rounded-lg shadow-lg">
+            <div className="p-5">
             <div className="flex justify-between">
               <div className="font-semibold text-xl">Monthly Sales</div>
-              <div className="font-normal text-gray-400">2021</div>
+              <div className="font-normal text-gray-400">2024</div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-10 h-64">
               <MyChart />
+            </div>
             </div>
           </div>
           {/* ============================ */}

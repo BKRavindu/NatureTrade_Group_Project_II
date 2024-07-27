@@ -20,8 +20,8 @@ const MyChart = () => {
       {
         label: 'Sales',
         data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-        borderColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgb(9, 196, 163)',
+        borderColor: 'rgb(6, 145, 120)',
         borderWidth: 1,
         fill: true,
       },
@@ -39,8 +39,7 @@ const options = {
             text: 'Monthly Sales Data',
         },
     },
-    maintainAspectRatio: false,
-    height: 1000, // Add this line to set the height
+    maintainAspectRatio: false, // Add this line to set the height
 };
 
   return (
