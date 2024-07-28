@@ -4,8 +4,7 @@ import React from 'react'
 import NavBar from '../../components/supplier/NavBar'
 import SideBar from '../../components/supplier/SideBar'
 
-
-function Order() {
+function Requests() {
   return (
     <>
         <NavBar />
@@ -51,16 +50,13 @@ function Order() {
                                     Processing
                                 </button>
                             </td>                            
-                                    {/* Processing̥
-                                </button>
-                            </td>                     */}
+                                                      
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>006</td>
                                 <td className='px-8 py-5 text-sm'>2024-04-01</td>
                                 <td className='px-8 py-5 text-sm'>3.30 PM</td>
                                 <td className='px-8 py-5 text-sm'>Cinnamon</td>
-                                <td className='px-8 py-5 text-sm'><span className='bg-red-500 text-black font-semibold rounded px-4 py-2'>Cancelled</span></td>
                                 <td className='px-8 py-5 text-sm'><span className='bg-yellow-500 text-black font-semibold rounded px-4 py-2'>Cancelled</span></td>
                                
                             </tr>
@@ -99,10 +95,10 @@ function Order() {
                     </table>
                 </div>
             </div>
-                
+           
         </div>
     </>
   )
 }
 
-export default Order
+export default Requests
