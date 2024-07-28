@@ -17,6 +17,7 @@ import BuyerDash from './pages/Buyer/BuyerDash';
 import BOrders from './pages/Buyer/BOrders';
 import BCollectingcenter from './pages/Buyer/BCollectingcenter';
 import BDelivery from './pages/Buyer/BDelivery';
+import BProfile from './pages/Buyer/BProfile.jsx';
 import AdminDash from './pages/admin/AdminDash';
 import Users from './pages/admin/Users';
 import ViewUser from './pages/admin/ViewUser';
@@ -69,6 +70,7 @@ function App() {
         <Route path="/BOrders" element={<BOrders/>}/>
         <Route path="/BCollectingcenter" element={<BCollectingcenter/>}/>
         <Route path="/BDelivery" element={<BDelivery/>}/>
+        <Route path="/BProfile" element={<BProfile/>}/>
         <Route path="/supplier/Dashboard" element={<SupplierDash/>}/>
         <Route path="/supplier/Requests" element={<Requests/>}/>
         <Route path="supplier/Requestform" element={<Requestform/>}/>

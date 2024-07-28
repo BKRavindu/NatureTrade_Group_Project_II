@@ -9,7 +9,7 @@ function NavBar() {
     <nav className="flex sticky top-0 bg-white w-full h-20 items-center px-4">
       <div className="flex items-center">
         <img src={logo} alt="NatureTrade Logo" className='w-12 h-12' />
-        <div className="text-xl font-semibold text-center ml-3">NatureTrade</div>
+        <div className="text-2xl font-semibold text-center ml-3">NatureTrade</div>
         <i className='bx bx-menu w-5 text-xl h-5 ml-8'></i>
       </div>
       <input 
@@ -22,8 +22,8 @@ function NavBar() {
         <i className='bx bxs-bell text-xl'></i>
         <i className='bx bxs-moon text-xl'></i>
         <div className="flex flex-col items-left p-2">
-          <div className="text-md font-semibold">John</div>
-          <div className="text-sm font-ligh">Delivery Partner</div>
+          <div className="text-lg font-semibold">John</div>
+          <div className="text-lg font-ligh">Delivery Partner</div>
         </div>
         <img src={profile} alt="Profile" className='w-12 h-12 rounded-full object-cover' />
       </div>
