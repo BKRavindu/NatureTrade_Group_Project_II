@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from "axios";
-import { server } from '../../server.js';
+import { server } from '../server.js';
 
 const ActivationPage = () => {
   const { activation_token } = useParams();
