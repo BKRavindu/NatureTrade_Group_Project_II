@@ -37,9 +37,7 @@ import Requestform from './pages/supplier/Requestform.jsx';
 import Advertisements from './pages/supplier/Advertisements.jsx';
 import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
 import Homepage from './components/Homepage/Homepage.jsx';
-
 import SupplierContact from './pages/supplier/SupplierContact.jsx';
-
 import CustomToastContainer from './components/CustomToastContainer';
 
 
