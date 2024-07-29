@@ -11,7 +11,7 @@ function Centers() {
         <NavBar />
         <div className="flex">
             <SideBar />
-            <div className="flex flex-col flex-1">
+            <div className="flex flex-col flex-1 ml-[250px]">
                 <div className="flex flex-col">
                     <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Centers</div>
                     <div className="flex flex-row gap-3">
