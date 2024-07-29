@@ -11,7 +11,7 @@ function Contact() {
         <NavBar />
         <div className="flex">
             <SideBar />
-            <div className="flex flex-col flex-1">
+            <div className="flex flex-col flex-1 ml-[250px]">
                 <div className="flex flex-col">
                     <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Contact</div>
                     <div className="flex flex-row gap-3">
@@ -22,7 +22,7 @@ function Contact() {
                 </div>
                 <div className="flex flex-col gap-3 bg-white my-7 mx-7 p-5 rounded-lg shadow-lg p-8 pt-5">
                     <div className="flex justify-between">
-                        <div className="font-semibold text-xl">Contact</div>
+                       
                         <div className="flex gap-3 items-center justify-center">
                             <input type="text" className='bg-gray-300 w-60 rounded-md px-3' placeholder='search'  />
                             <i className='bx bx-search' ></i>

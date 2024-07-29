@@ -42,3 +42,8 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+font-poppins{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}

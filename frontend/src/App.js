@@ -1,11 +1,15 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
+
 import {LoginPage, SignUpPage, ActivationPage} from "./Routes.js";
 import SupplierSignUp from './components/SupplierSignUp.jsx';
+
+import {LoginPage, SignUpPage,ActivationPage} from "./Routes.js";
+
 import DeliveryDash from './pages/deliveryCompany/DeliveryDash';
 import OrderView from './pages/deliveryCompany/OrderView';
 import Order from './pages/deliveryCompany/Order';
@@ -24,6 +28,7 @@ import ViewUser from './pages/admin/ViewUser';
 import Contact from './pages/admin/Contact';
 import Centers from './pages/admin/Centers';
 import Profile from './pages/admin/Profile';
+import ViewChat from './pages/admin/ViewChat.jsx';
 import SupplierDash from './pages/supplier/SupplierDash.jsx';
 import Requests from './pages/supplier/Requests.jsx';
 import SupplierStore from './pages/supplier/SupplierStore.jsx'
@@ -31,9 +36,12 @@ import Requestform from './pages/supplier/Requestform.jsx';
 import Advertisements from './pages/supplier/Advertisements.jsx';
 import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
 import Homepage from './components/Homepage/Homepage.jsx';
+
 import SupplierContact from './pages/supplier/SupplierContact.jsx';
+
 import CustomToastContainer from './components/CustomToastContainer';
-import 'react-toastify/dist/ReactToastify.css';
+
+
 
 function App() {
 
@@ -53,8 +61,7 @@ function App() {
       <Route exact path="/" element={<Homepage />}/>
         <Route path="/login" element={<LoginPage /> } />
         <Route path="/sign-up" element={<SignUpPage /> } />
-        <Route path="/supplier-sign-up" element={<SupplierSignUp />} />
-        <Route path="/Delivery/Dashboard" element={<DeliveryDash />} />
+        <Route path="/DeliveryDashboard" element={<DeliveryDash />} />
         <Route path="/Delivery/OrderView" element={<OrderView />} />
         <Route path="/Delivery/Order" element={<Order />} />
         <Route path="/Delivery/Subscription" element={<Subscription />} />
@@ -64,6 +71,7 @@ function App() {
         <Route path="/Admin/ViewUser" element={<ViewUser/>}/>
         <Route path="/Admin/Contact" element={<Contact/>}/>
         <Route path="/Admin/Centers" element={<Centers/>}/>
+        <Route path="/Admin/ViewChat" element={<ViewChat/>}/>
         <Route path="/CollectorDash" element={<CollectorDash/>}/>
         <Route path="/CollectorStore" element={<CollectorStore/>}/>
         <Route path="/BuyerDash" element={<BuyerDash/>}/>
@@ -82,6 +90,7 @@ function App() {
         <Route path="/Admin/Profile" element={<Profile/>}/>
         <Route path="/activation/:activation_token" element={<ActivationPage /> } />
       </Routes>
+      <CustomToastContainer />
     </BrowserRouter>
     
   );
