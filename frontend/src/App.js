@@ -4,7 +4,12 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
+
+import {LoginPage, SignUpPage, ActivationPage} from "./Routes.js";
+import SupplierSignUp from './components/SupplierSignUp.jsx';
+
 import {LoginPage, SignUpPage,ActivationPage} from "./Routes.js";
+
 import DeliveryDash from './pages/deliveryCompany/DeliveryDash';
 import OrderView from './pages/deliveryCompany/OrderView';
 import Order from './pages/deliveryCompany/Order';
@@ -16,6 +21,7 @@ import BuyerDash from './pages/Buyer/BuyerDash';
 import BOrders from './pages/Buyer/BOrders';
 import BCollectingcenter from './pages/Buyer/BCollectingcenter';
 import BDelivery from './pages/Buyer/BDelivery';
+import BProfile from './pages/Buyer/BProfile.jsx';
 import AdminDash from './pages/admin/AdminDash';
 import Users from './pages/admin/Users';
 import ViewUser from './pages/admin/ViewUser';
@@ -26,10 +32,13 @@ import ViewChat from './pages/admin/ViewChat.jsx';
 import SupplierDash from './pages/supplier/SupplierDash.jsx';
 import Requests from './pages/supplier/Requests.jsx';
 import SupplierStore from './pages/supplier/SupplierStore.jsx'
-import Advertisments from './pages/supplier/Advertisments.jsx';
-import SupplierContact from './pages/supplier/SupplierContact.jsx'
+import Requestform from './pages/supplier/Requestform.jsx';
+import Advertisements from './pages/supplier/Advertisements.jsx';
 import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
 import Homepage from './components/Homepage/Homepage.jsx';
+
+import SupplierContact from './pages/supplier/SupplierContact.jsx';
+
 import CustomToastContainer from './components/CustomToastContainer';
 
 
@@ -47,6 +56,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <CustomToastContainer />
       <Routes>
       <Route exact path="/" element={<Homepage />}/>
         <Route path="/login" element={<LoginPage /> } />
@@ -68,13 +78,14 @@ function App() {
         <Route path="/BOrders" element={<BOrders/>}/>
         <Route path="/BCollectingcenter" element={<BCollectingcenter/>}/>
         <Route path="/BDelivery" element={<BDelivery/>}/>
+        <Route path="/BProfile" element={<BProfile/>}/>
         <Route path="/supplier/Dashboard" element={<SupplierDash/>}/>
         <Route path="/supplier/Requests" element={<Requests/>}/>
+        <Route path="supplier/Requestform" element={<Requestform/>}/>
         <Route path="/supplier/SupplierStore" element={<SupplierStore/>}/>
-        <Route path="/supplier/Advertisments" element={<Advertisments/>}/>
+        <Route path="/supplier/Advertisements" element={<Advertisements/>}/>
         <Route path="/supplier/SupplierContact" element={<SupplierContact/>}/>
         <Route path="/supplier/SupplierProfile" element={<SupplierProfile/>}/>
-        <Route path="/SupplierDash" element={<SupplierDash/>}/>
         <Route path="/Requests" element={<Requests/>}/>
         <Route path="/Admin/Profile" element={<Profile/>}/>
         <Route path="/activation/:activation_token" element={<ActivationPage /> } />

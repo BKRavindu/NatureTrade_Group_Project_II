@@ -2,8 +2,15 @@ import React from 'react'
 import SideBar from '../../components/supplier/SideBar'
 import NavBar from '../../components/supplier/NavBar'
 import logo from '../../assets/Untitled design (1) 1.svg';
-import {Link} from 'react-router-dom'
-const Advertisments = () => {
+import {Link, useNavigate } from 'react-router-dom'
+
+const Advertisements = () => {
+    const navigate = useNavigate();
+
+    const handleRequestClick = () => {
+        navigate('/supplier/Requestform'); // Update the path to the Requestform
+    };
+
     return (
         <>
             <NavBar />
@@ -91,6 +98,16 @@ const Advertisments = () => {
                                 </div>
                             </div>
                         </div>
+                        {/* Request button */}
+                        <div className="flex justify-center mt-6">
+                            <button
+                                type="button"
+                                className="bg-primary text-gray-900 font-semibold p-2 rounded-md hover:bg-primary-dark"
+                                onClick={handleRequestClick} // Add onClick handler
+                            >
+                                Request
+                            </button>
+                        </div>
 
                         <div className="flex flex-col items-center justify-center p-10 px-20 bg-gray-100 mt-6 mb-6 ">
                             <div className="font-bold text-xl">Thank You for Choosing Nature Trade </div>
@@ -106,4 +123,4 @@ const Advertisments = () => {
       )
     }
     
-export default Advertisments
+export default Advertisements

@@ -1,6 +1,14 @@
+
+import {React,useState} from 'react'
+import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
+import styles from '../styles/styles';
+import {Link} from 'react-router-dom';
+import {RxAvatar} from 'react-icons/rx';
+
 import React, { useState } from 'react';
 import { AiOutlineEye, AiOutlineEyeInvisible, AiOutlineMail, AiOutlineUser, AiOutlineLock } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+
 import { server } from "../server";
 import axios from "axios";
 import { toast } from 'react-toastify';
@@ -55,6 +63,14 @@ const SignUp = () => {
         newForm.append("password", password);
         newForm.append("role", role); // Append the role to the form data
 
+
+        axios.post(`${server}/user/create-user`,newForm, config).then((res) => {
+            console.log(res)
+        }).catch((err) => {
+            console.log(err.response.data.message)
+            toast.error("User already exist");
+        });
+
         axios.post(`${server}/user/create-user`, newForm, config)
             .then((res) => {
                 toast.success(res.data.message);
@@ -69,6 +85,7 @@ const SignUp = () => {
             .catch((error) => {
                 toast.error(error.response.data.message);
             });
+
     };
 
     return (
