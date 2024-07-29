@@ -4,12 +4,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
-
 import {LoginPage, SignUpPage, ActivationPage} from "./Routes.js";
-import SupplierSignUp from './components/SupplierSignUp.jsx';
-
-import {LoginPage, SignUpPage,ActivationPage} from "./Routes.js";
-
 import DeliveryDash from './pages/deliveryCompany/DeliveryDash';
 import OrderView from './pages/deliveryCompany/OrderView';
 import Order from './pages/deliveryCompany/Order';
@@ -36,9 +31,7 @@ import Requestform from './pages/supplier/Requestform.jsx';
 import Advertisements from './pages/supplier/Advertisements.jsx';
 import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
 import Homepage from './components/Homepage/Homepage.jsx';
-
 import SupplierContact from './pages/supplier/SupplierContact.jsx';
-
 import CustomToastContainer from './components/CustomToastContainer';
 
 
