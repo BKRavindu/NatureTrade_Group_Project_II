@@ -12,6 +12,10 @@ import Subscription from './pages/deliveryCompany/Subscription';
 import SubscriptionActive from './pages/deliveryCompany/SubscriptionActive';
 import CollectorDash from './pages/CollectingCenter/CollectorDash';
 import CollectorStore from './pages/CollectingCenter/CollectorStore';
+import CollectorSuppliers from './pages/CollectingCenter/CollectorSuppliers';
+import CollectorRequests from './pages/CollectingCenter/CollectorRequests';
+import CollectorBidding from './pages/CollectingCenter/CollectorBidding';
+import CollectorProfile from './pages/CollectingCenter/CollectorProfile';
 import BuyerDash from './pages/Buyer/BuyerDash';
 import BOrders from './pages/Buyer/BOrders';
 import BCollectingcenter from './pages/Buyer/BCollectingcenter';
@@ -67,8 +71,12 @@ function App() {
         <Route path="/Admin/Contact" element={<Contact/>}/>
         <Route path="/Admin/Centers" element={<Centers/>}/>
         <Route path="/Admin/ViewChat" element={<ViewChat/>}/>
-        <Route path="/CollectorDash" element={<CollectorDash/>}/>
-        <Route path="/CollectorStore" element={<CollectorStore/>}/>
+        <Route path="/Collector/CollectorDash" element={<CollectorDash/>}/>
+        <Route path="/Collector/CollectorStore" element={<CollectorStore/>}/>
+        <Route path="/Collector/CollectorSuppliers" element={<CollectorSuppliers/>}/>
+        <Route path="/Collector/CollectorRequests" element={<CollectorRequests/>}/>
+        <Route path="/Collector/CollectorBidding" element={<CollectorBidding/>}/>
+        <Route path="/Collector/CollectorProfile" element={<CollectorProfile/>}/>
         <Route path="/BuyerDash" element={<BuyerDash/>}/>
         <Route path="/BOrders" element={<BOrders/>}/>
         <Route path="/BCollectingcenter" element={<BCollectingcenter/>}/>
