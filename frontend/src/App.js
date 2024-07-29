@@ -20,6 +20,8 @@ import BuyerDash from './pages/Buyer/BuyerDash';
 import BOrders from './pages/Buyer/BOrders';
 import BCollectingcenter from './pages/Buyer/BCollectingcenter';
 import BDelivery from './pages/Buyer/BDelivery';
+import BStore from './pages/Buyer/BStore';
+import BBidding from './pages/Buyer/BBidding';
 import BProfile from './pages/Buyer/BProfile.jsx';
 import AdminDash from './pages/admin/AdminDash';
 import Users from './pages/admin/Users';
@@ -57,7 +59,11 @@ function App() {
     <BrowserRouter>
     <CustomToastContainer />
       <Routes>
-      <Route exact path="/" element={<Homepage />}/>
+        <Route path="/login" element={<LoginPage />
+        <Route path="/sign-up" element={<SignUpPage /> } />*/}
+        <Route path="/supplier-sign-up" element={<SupplierSignUp />} />
+        <Route path="/Delivery/Dashboard" element={<DeliveryDash />} />
+        <Route exact path="/" element={<Homepage />}/>
         <Route path="/login" element={<LoginPage /> } />
         <Route path="/sign-up" element={<SignUpPage /> } />
         <Route path="/DeliveryDashboard" element={<DeliveryDash />} />
@@ -70,6 +76,14 @@ function App() {
         <Route path="/Admin/ViewUser" element={<ViewUser/>}/>
         <Route path="/Admin/Contact" element={<Contact/>}/>
         <Route path="/Admin/Centers" element={<Centers/>}/>
+        <Route path="/CollectorDash" element={<CollectorDash/>}/>
+        <Route path="/Buyer/BuyerDash" element={<BuyerDash/>}/>
+        <Route path="/Buyer/BOrders" element={<BOrders/>}/>
+        <Route path="/Buyer/BCollectingcenter" element={<BCollectingcenter/>}/>
+        <Route path="/Buyer/BDelivery" element={<BDelivery/>}/>
+        <Route path="/Buyer/BStore" element={<BStore/>}/>
+        <Route path="/Buyer/BBidding" element={<BBidding/>}/>
+        <Route path="/SupplierDash" element={<SupplierDash/>}/>
         <Route path="/Admin/ViewChat" element={<ViewChat/>}/>
         <Route path="/Collector/CollectorDash" element={<CollectorDash/>}/>
         <Route path="/Collector/CollectorStore" element={<CollectorStore/>}/>

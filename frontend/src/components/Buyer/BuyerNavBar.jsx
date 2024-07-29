@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/Untitled design (1) 1.svg';
 import tab from '../../assets/Glyph.png';
-import profile from '../../assets/images.jpeg';
+import profile from '../../assets/BuyerProfile.jpg';
 
 function BuyerNavBar() {
   return (
