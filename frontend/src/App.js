@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import {LoginPage, SignUpPage} from "./Routes.js";
+//import {LoginPage, SignUpPage} from "./Routes.js";
 import SupplierSignUp from './components/SupplierSignUp.jsx';
 import DeliveryDash from './pages/deliveryCompany/DeliveryDash';
 import OrderView from './pages/deliveryCompany/OrderView';
@@ -12,6 +12,8 @@ import BuyerDash from './pages/Buyer/BuyerDash';
 import BOrders from './pages/Buyer/BOrders';
 import BCollectingcenter from './pages/Buyer/BCollectingcenter';
 import BDelivery from './pages/Buyer/BDelivery';
+import BStore from './pages/Buyer/BStore';
+import BBidding from './pages/Buyer/BBidding';
 import AdminDash from './pages/admin/AdminDash';
 import Users from './pages/admin/Users';
 import ViewUser from './pages/admin/ViewUser';
@@ -28,8 +30,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<LoginPage /> } />
-        <Route path="/sign-up" element={<SignUpPage /> } />
+        {/*<Route path="/login" element={<LoginPage /> } />
+        <Route path="/sign-up" element={<SignUpPage /> } />*/}
         <Route path="/supplier-sign-up" element={<SupplierSignUp />} />
         <Route path="/Delivery/Dashboard" element={<DeliveryDash />} />
         <Route path="/Delivery/OrderView" element={<OrderView />} />
@@ -42,10 +44,12 @@ function App() {
         <Route path="/Admin/Contact" element={<Contact/>}/>
         <Route path="/Admin/Centers" element={<Centers/>}/>
         <Route path="/CollectorDash" element={<CollectorDash/>}/>
-        <Route path="/BuyerDash" element={<BuyerDash/>}/>
-        <Route path="/BOrders" element={<BOrders/>}/>
-        <Route path="/BCollectingcenter" element={<BCollectingcenter/>}/>
-        <Route path="/BDelivery" element={<BDelivery/>}/>
+        <Route path="/Buyer/BuyerDash" element={<BuyerDash/>}/>
+        <Route path="/Buyer/BOrders" element={<BOrders/>}/>
+        <Route path="/Buyer/BCollectingcenter" element={<BCollectingcenter/>}/>
+        <Route path="/Buyer/BDelivery" element={<BDelivery/>}/>
+        <Route path="/Buyer/BStore" element={<BStore/>}/>
+        <Route path="/Buyer/BBidding" element={<BBidding/>}/>
         <Route path="/SupplierDash" element={<SupplierDash/>}/>
         <Route path="/Requests" element={<Requests/>}/>
         <Route path="/Store" element={<Store/>}/>
