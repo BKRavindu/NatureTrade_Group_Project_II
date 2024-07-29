@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../../components/admin/NavBar'
 import SideBar from '../../components/admin/SideBar'
 import profile from '../../assets/images.jpeg';
+import { Link } from 'react-router-dom';
 
 function ViewUser() {
   return (
@@ -9,7 +10,7 @@ function ViewUser() {
         <NavBar />
         <div className="flex">
             <SideBar />
-            <div className="flex flex-col flex-1 mr-3">
+            <div className="flex flex-col flex-1 mr-3 ml-[250px]">
                 <div className="flex flex-col">
                     <div className="font-semibold text-xl mb-2 -mt-12 mb-5">View User</div>
                     <div className="flex flex-row gap-3">
@@ -41,7 +42,10 @@ function ViewUser() {
                             <div className="text-normal font-semibold">Contact Me</div>
                             <div className="flex gap-2 pl-3 pr-4 py-1 rounded-xl items-center border border-gray-300">
                                 <i className='bx bx-edit' ></i>
-                                <div className="font-semibold text-sm">Edit</div>
+                                <Link to="/Admin/Profile">
+                                    <div className="font-semibold text-sm">Edit</div>
+                                </Link>
+                                
                             </div>
                         </div>
                         <div className="flex justify-between items-start m-3">
