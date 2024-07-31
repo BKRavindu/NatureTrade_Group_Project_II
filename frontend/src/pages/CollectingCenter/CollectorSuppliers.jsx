@@ -4,6 +4,7 @@ import SideBar from '../../components/CollectingCenter/CollectorSideBar'
 import NavBar from '../../components/CollectingCenter/CollectorNavBar'
 import { FiEdit, FiEye, FiPhoneCall  } from "react-icons/fi";
 import { BsFillStarFill } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 function CollectorSuppliers() {
 
@@ -52,7 +53,9 @@ function CollectorSuppliers() {
                                 </div>    
                             </div>
                             <div className="flex justify-evenly items-center">
+                            <Link to="/Collector/CollectorSuppliers/ViewSupplier">
                                 <div className="flex m-2 border border-gray-300 rounded-lg shadow-lg items-center justify-center pl-4 pr-4 pt-1 pb-1 w-full cursor-pointer"><FiEye className='mr-2'/>View</div>
+                            </Link>    
                                 <div className="flex m-2 border border-gray-300 rounded-lg shadow-lg items-center justify-center pl-4 pr-4 pt-1 pb-1 w-full cursor-pointer"><FiPhoneCall  className='mr-2'/>Contact</div>
                             </div>
                         </div>
@@ -169,7 +172,7 @@ function CollectorSuppliers() {
                                 <td className='px-4 py-3 text-sm'>077-431-4590</td>
                                 <td className='px-4 py-3 text-sm'>Kandy</td>
                                 <td className='px-4 py-3 text-sm'>Cinnamon, Chiili</td>
-                                <td className='flex justify-center px-4 py-3 text-sm'><FiEye className='m-2 cursor-pointer'/><FiPhoneCall  className='m-2 cursor-pointer'/></td>
+                                <td className='flex justify-center px-4 py-3 text-sm'><Link to="/Collector/CollectorSuppliers/ViewSupplier"><FiEye className='m-2 cursor-pointer'/></Link><FiPhoneCall  className='m-2 cursor-pointer'/></td>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-4 py-3 text-sm  '>S-007</td>

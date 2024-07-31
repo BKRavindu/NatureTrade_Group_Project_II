@@ -4,7 +4,7 @@ import NavBar from '../../components/CollectingCenter/CollectorNavBar'
 import { FiEye, FiPhoneCall  } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 
-function CollectorRequests() {
+function CollectorOrders() {
   return (
     <>
         <NavBar />
@@ -29,7 +29,7 @@ function CollectorRequests() {
                     </div>
                     <table className=''>
                         <tr className='font-semibold font-center '>
-                            <th className='px-6 py-3  text-sm font-semibold '>Advertisement No</th>
+                            <th className='px-6 py-3  text-sm font-semibold '>Product Id</th>
                             <th className='px-6 py-3  text-sm font-semibold '>Date</th>
                             <th className='px-6 py-3  text-sm font-semibold '>Time</th>
                             <th className='px-6 py-3  text-sm font-semibold '>Requested product</th>
@@ -52,7 +52,7 @@ function CollectorRequests() {
                                     Processing
                                 </button>
                             </td>  
-                            <td className='flex justify-center px-4 py-3 text-sm'><Link to="/Collector/CollectorRequests/ViewRequest"><FiEye className='m-2 cursor-pointer'/></Link><FiPhoneCall  className='m-2 cursor-pointer'/></td>                          
+                            <td className='flex justify-center px-4 py-3 text-sm'><Link to="/Collector/CollectorOrders/ViewOrder"><FiEye className='m-2 cursor-pointer'/></Link><FiPhoneCall  className='m-2 cursor-pointer'/></td>                          
                                                       
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
@@ -104,4 +104,4 @@ function CollectorRequests() {
   )
 }
 
-export default CollectorRequests
+export default CollectorOrders

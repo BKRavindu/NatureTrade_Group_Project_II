@@ -32,12 +32,22 @@ function SideBar() {
           <i className='bx bx-chat text-gray-700 text-xl'></i>
           <span className='font-sans ml-4 font-light'>Requests</span>
         </NavLink>
+
+        <NavLink to="/Collector/CollectorOrders" 
+          className={({ isActive }) => 
+          isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
+          }>
+            
+          <i className='bx bx-chat text-gray-700 text-xl'></i>
+          <span className='font-sans ml-4 font-light'>Orders</span>
+        </NavLink>
+
         <NavLink to="/Collector/CollectorStore"
           className={({ isActive }) => 
           isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>
           <i className='bx bx-credit-card-front text-gray-700 text-xl'></i>
-          <span className='font-sans ml-4 font-light'>Store</span>
+          <span className='font-sans ml-4 font-light'>Branches</span>
         </NavLink>
 
         <NavLink to="/Collector/CollectorBidding"
