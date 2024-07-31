@@ -1,7 +1,7 @@
 import React from 'react'
 import BuyerNavBar from '../../components/Buyer/BuyerNavBar'
 import BuyerSideBar from '../../components/Buyer/BuyerSideBar'
-
+import { Link } from 'react-router-dom'
 
 function BOrders() {
   return (
@@ -15,7 +15,7 @@ function BOrders() {
                         <div className="flex flex-row gap-3">
 
                             <div className="font-normal text-gray-400 text-md">Dashboard</div>{">"}
-                            <div className="font-normal text-md">Orders</div>
+                            <div className="font-normal text-md">Orderes</div>
                         </div>
                 </div>
                 <div className="flex flex-col gap-3 bg-white my-7 p-5 rounded-lg shadow-lg p-8 pt-5">
@@ -45,8 +45,10 @@ function BOrders() {
                                 <td className='px-8 py-5 text-sm'>1500</td>
                                 <td className='px-8 py-5 text-sm'>15000</td>
                                 <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                               Edit
-                                </button>
+                    <Link to="/Buyer/BEditOrder">
+                    <div className="font-semibold text-sm">Edit</div>
+                    </Link>
+                    </button>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>006</td>
@@ -56,8 +58,10 @@ function BOrders() {
                                 <td className='px-8 py-5 text-sm'>3000</td>
                                 <td className='px-8 py-5 text-sm'>30000</td>
                                 <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                Edit
-                                </button>
+                    <Link to="/Buyer/BEdittOrder">
+                    <div className="font-semibold text-sm">Edit</div>
+                    </Link>
+                    </button>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>004</td>
@@ -67,8 +71,10 @@ function BOrders() {
                                 <td className='px-8 py-5 text-sm'>2500</td>
                                 <td className='px-8 py-5 text-sm'>25000</td>
                                 <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                Edit
-                                </button>
+                    <Link to="/Buyer/BEdittOrder">
+                    <div className="font-semibold text-sm">Edit</div>
+                    </Link>
+                    </button>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>007</td>
@@ -78,8 +84,10 @@ function BOrders() {
                                 <td className='px-8 py-5 text-sm'>2100</td>
                                 <td className='px-8 py-5 text-sm'>21000</td>
                                 <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                Edit
-                                </button>
+                    <Link to="/Buyer/BEditOrder">
+                    <div className="font-semibold text-sm">Edit</div>
+                    </Link>
+                    </button>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>014</td>
@@ -89,8 +97,10 @@ function BOrders() {
                                 <td className='px-8 py-5 text-sm'>2200</td>
                                 <td className='px-8 py-5 text-sm'>22000</td>
                                 <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                Edit
-                                </button>
+                    <Link to="/Buyer/BEditOrder">
+                    <div className="font-semibold text-sm">Edit</div>
+                    </Link>
+                    </button>
                             </tr>
                         </tbody>
 

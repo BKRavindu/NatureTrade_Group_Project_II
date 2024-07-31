@@ -1,9 +1,9 @@
-import LoginPage from "../src/pages/Login";
-import SignUpPage from "../src/pages/Signup";
-import SupplierSignUpPage from "../src/pages/SupplierSignUp"
+import Login from "../src/pages/Login/Login";
+import Signup from "../src/pages/Signup/Signup";
+import ActivationPage from "../src/pages/ActivationPage"
 
 export{
-    LoginPage,
-    SignUpPage,
+    Login,
+    Signup,
     ActivationPage,
 }
