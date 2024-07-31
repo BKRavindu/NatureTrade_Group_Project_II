@@ -28,15 +28,15 @@ function BCollectingcenter() {
                     </div>
                     <table className=''>
                         <tr className='font-semibold font-center '>
-                            <th className='px-6 py-3  text-sm font-semibold '>Center ID</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Center Name</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Action</th>
+                            <th className='px-6 py-3  text-lg font-semibold '>Center ID</th>
+                            <th className='px-6 py-3  text-lg font-semibold '>Center Name</th>
+                            <th className='px-6 py-3  text-lg font-semibold '>Action</th>
                             
                         </tr>
                         <tbody className='font-light text-center'>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
-                                <td className='px-8 py-5 text-sm  '>007</td>
-                                <td className='px-8 py-5 text-sm'>Green Fiber</td>
+                                <td className='px-8 py-5 text-lg  '>007</td>
+                                <td className='px-8 py-5 text-lg'>Green Fiber</td>
                                 <td className='px-4 py-3 text-lg'>
                                 <Link to="/Buyer/BCollectorProfile">
                                 <ion-icon name="eye-outline"></ion-icon>
@@ -45,8 +45,8 @@ function BCollectingcenter() {
                                 
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
-                                <td className='px-8 py-5 text-sm'>006</td>
-                                <td className='px-8 py-5 text-sm'> Circular Collectors</td>
+                                <td className='px-8 py-5 text-lg'>006</td>
+                                <td className='px-8 py-5 text-lg'> Circular Collectors</td>
                                 <td className='px-4 py-3 text-lg'>
                                 <Link to="/Buyer/BCollectorProfile">
                                 <ion-icon name="eye-outline"></ion-icon>
@@ -55,8 +55,8 @@ function BCollectingcenter() {
                                
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
-                                <td className='px-8 py-5 text-sm'>004</td>
-                                <td className='px-8 py-5 text-sm'>Eco Collect</td>
+                                <td className='px-8 py-5 text-lg'>004</td>
+                                <td className='px-8 py-5 text-lg'>Eco Collect</td>
                                 <td className='px-4 py-3 text-lg'>
                                 <Link to="/Buyer/BCollectorProfile">
                                 <ion-icon name="eye-outline"></ion-icon>
@@ -65,8 +65,8 @@ function BCollectingcenter() {
                                 
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
-                                <td className='px-8 py-5 text-sm'>007</td>
-                                <td className='px-8 py-5 text-sm'>Green Cycle</td>
+                                <td className='px-8 py-5 text-lg'>007</td>
+                                <td className='px-8 py-5 text-lg'>Green Cycle</td>
                                 <td className='px-4 py-3 text-lg'>
                                 <Link to="/Buyer/BCollectorProfile">
                                 <ion-icon name="eye-outline"></ion-icon>
@@ -75,8 +75,8 @@ function BCollectingcenter() {
                                 
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
-                                <td className='px-8 py-5 text-sm'>014</td>
-                                <td className='px-8 py-5 text-sm'>Unity Hub</td>
+                                <td className='px-8 py-5 text-lg'>014</td>
+                                <td className='px-8 py-5 text-lg'>Unity Hub</td>
                                 <td className='px-4 py-3 text-lg'>
                                 <Link to="/Buyer/BCollectorProfile">
                                 <ion-icon name="eye-outline"></ion-icon>
