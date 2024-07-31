@@ -58,8 +58,9 @@ function SupplierStore() {
                         <img src={cinnamon} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                             Cinnamon
-                        <span className="text-lg font-normal">Type:Alba</span>
-                        <span className="text-lg font-normal">Quantity:10Kg</span>
+                        <span className="text-lg font-normal">Type: Alba</span>
+                        <span className="text-lg font-normal">Quantity: 10Kg</span>
+                        <span className="text-lg font-normal">Price: Rs.3500(1Kg)</span>
                         </div>
                     </div>
 
@@ -67,8 +68,9 @@ function SupplierStore() {
                         <img src={pepper} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                             Pepper
-                            <span className="text-lg font-normal">Type:Black</span>
-                        <span className="text-lg font-normal">Quantity:8Kg</span>
+                            <span className="text-lg font-normal">Type: Black</span>
+                        <span className="text-lg font-normal">Quantity: 8Kg</span>
+                        <span className="text-lg font-normal">Price: Rs.1500(1Kg)</span>
                         </div>
                     </div>
 
@@ -76,8 +78,9 @@ function SupplierStore() {
                         <img src={clove} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                             Clove
-                            <span className="text-lg font-normal">Type:Spicy</span>
-                        <span className="text-lg font-normal">Quantity:12Kg</span>
+                            <span className="text-lg font-normal">Type: Spicy</span>
+                        <span className="text-lg font-normal">Quantity: 12Kg</span>
+                        <span className="text-lg font-normal">Price: Rs.2000(1Kg)</span>
                         </div>
                     </div>
 
@@ -85,8 +88,9 @@ function SupplierStore() {
                         <img src={nutmeg} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                             Nutmeg
-                            <span className="text-lg font-normal">Type:Kinattukara</span>
-                        <span className="text-lg font-normal">Quantity:5Kg</span>
+                            <span className="text-lg font-normal">Type: Kinattukara</span>
+                        <span className="text-lg font-normal">Quantity: 5Kg</span>
+                        <span className="text-lg font-normal">Price: Rs.2400(1Kg)</span>
                         </div>
                     </div>
                 </div>
@@ -96,8 +100,9 @@ function SupplierStore() {
                             <img src={coriander} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                             <div className="text-xl font-semibold flex flex-col items-center">
                                 Coriander
-                                <span className="text-lg font-normal">Type:Ceylon</span>
-                            <span className="text-lg font-normal">Quantity:10Kg</span>
+                                <span className="text-lg font-normal">Type: Ceylon</span>
+                            <span className="text-lg font-normal">Quantity: 10Kg</span>
+                            <span className="text-lg font-normal">Price: Rs.1700(1Kg)</span>
                             </div>
                         </div>
     
@@ -105,8 +110,9 @@ function SupplierStore() {
                             <img src={cumin} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                             <div className="text-xl font-semibold flex flex-col items-center">
                                 Cumin
-                                <span className="text-lg font-normal">Type:Ceylon</span>
-                            <span className="text-lg font-normal">Quantity:20Kg</span>
+                                <span className="text-lg font-normal">Type: Ceylon</span>
+                            <span className="text-lg font-normal">Quantity: 20Kg</span>
+                            <span className="text-lg font-normal">Price: Rs.1300(1Kg)</span>
                             </div>
                         </div>
     
@@ -114,8 +120,9 @@ function SupplierStore() {
                             <img src={curryleaf} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                             <div className="text-xl font-semibold flex flex-col items-center">
                                 Curryleaf
-                                <span className="text-lg font-normal">Type:Ceylon</span>
-                            <span className="text-lg font-normal">Quantity:5Kg</span>
+                                <span className="text-lg font-normal">Type: Ceylon</span>
+                            <span className="text-lg font-normal">Quantity: 5Kg</span>
+                            <span className="text-lg font-normal">Price: Rs.800(1Kg)</span>
                             </div>
                         </div>
     
@@ -123,8 +130,9 @@ function SupplierStore() {
                             <img src={fennel} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                             <div className="text-xl font-semibold flex flex-col items-center">
                                 Fennel
-                                <span className="text-lg font-normal">Type:Ceylon</span>
-                            <span className="text-lg font-normal">Quantity:3Kg</span>
+                                <span className="text-lg font-normal">Type: Ceylon</span>
+                            <span className="text-lg font-normal">Quantity: 3Kg</span>
+                            <span className="text-lg font-normal">Price: Rs.750(1Kg)</span>
                             </div>
                         </div>
                     </div>
@@ -135,8 +143,9 @@ function SupplierStore() {
                             <img src={fenugreek} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                             <div className="text-xl font-semibold flex flex-col items-center">
                                 Fenugreek
-                                <span className="text-lg font-normal">Type:Ceylon</span>
-                            <span className="text-lg font-normal">Quantity:3Kg</span>
+                                <span className="text-lg font-normal">Type: Ceylon</span>
+                            <span className="text-lg font-normal">Quantity: 3Kg</span>
+                            <span className="text-lg font-normal">Price: Rs.600(1Kg)</span>
                             </div>
                         </div>
     
@@ -144,8 +153,9 @@ function SupplierStore() {
                             <img src={garlic} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                             <div className="text-xl font-semibold flex flex-col items-center">
                                 Garlic
-                                <span className="text-lg font-normal">Type:Ceylon</span>
-                            <span className="text-lg font-normal">Quantity:7Kg</span>
+                                <span className="text-lg font-normal">Type: Ceylon</span>
+                            <span className="text-lg font-normal">Quantity: 7Kg</span>
+                            <span className="text-lg font-normal">Price: Rs.1000(1Kg)</span>
                             </div>
                         </div>
     
@@ -153,8 +163,9 @@ function SupplierStore() {
                             <img src={ginger} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                             <div className="text-xl font-semibold flex flex-col items-center">
                                 Ginger
-                                <span className="text-lg font-normal">Type:Rangoon</span>
-                            <span className="text-lg font-normal">Quantity:4Kg</span>
+                                <span className="text-lg font-normal">Type: Rangoon</span>
+                            <span className="text-lg font-normal">Quantity: 4Kg</span>
+                            <span className="text-lg font-normal">Price: Rs.1500(1Kg)</span>
                             </div>
                         </div>
     
@@ -162,8 +173,9 @@ function SupplierStore() {
                             <img src={chilli} alt="" className='w-50 h-20 mt-10 rounded-full p-3' />
                             <div className="text-xl font-semibold flex flex-col items-center">
                                 Chilli
-                                <span className="text-lg font-normal">Type:Red</span>
-                            <span className="text-lg font-normal">Quantity:6Kg</span>
+                                <span className="text-lg font-normal">Type: Red</span>
+                            <span className="text-lg font-normal">Quantity: 6Kg</span>
+                            <span className="text-lg font-normal">Price: Rs.500(1Kg)</span>
                             </div>
                         </div>
                     </div>

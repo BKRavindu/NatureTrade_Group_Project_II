@@ -10,6 +10,8 @@ import OrderView from './pages/deliveryCompany/OrderView';
 import Order from './pages/deliveryCompany/Order';
 import Subscription from './pages/deliveryCompany/Subscription';
 import SubscriptionActive from './pages/deliveryCompany/SubscriptionActive';
+import DeliveryContact from './pages/deliveryCompany/DeliveryContact.jsx';
+import DeliveryProfile from './pages/deliveryCompany/DeliveryProfile.jsx';
 import CollectorDash from './pages/CollectingCenter/CollectorDash';
 import CollectorStore from './pages/CollectingCenter/CollectorStore';
 import CollectorSuppliers from './pages/CollectingCenter/CollectorSuppliers';
@@ -70,13 +72,14 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />}/>
         <Route path="/sign-up" element={<Signup/>} />
-        <Route path="/Delivery/Dashboard" element={<DeliveryDash />} />
         <Route exact path="/" element={<Homepage />}/>
-        <Route path="/DeliveryDashboard" element={<DeliveryDash />} />
+        <Route path="/Delivery/Dashboard" element={<DeliveryDash />} />
         <Route path="/Delivery/OrderView" element={<OrderView />} />
         <Route path="/Delivery/Order" element={<Order />} />
         <Route path="/Delivery/Subscription" element={<Subscription />} />
         <Route path="/Delivery/SubscriptionActive" element={<SubscriptionActive />} />
+        <Route path="/Delivery/DeliveryContact" element={<DeliveryContact />} />
+        <Route path="/Delivery/DeliveryProfile" element={<DeliveryProfile />} />
         <Route path="/Admin/Dashboard" element={<AdminDash />} />
         <Route path="/Admin/Users" element={<Users />} />
         <Route path="/Admin/ViewUser" element={<ViewUser/>}/>
