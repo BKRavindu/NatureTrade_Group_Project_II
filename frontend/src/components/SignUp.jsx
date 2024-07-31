@@ -93,7 +93,7 @@ const SignUp = () => {
                         </div>
                         <div className='sm:mx-auto sm:w-full sm:max-w-md'>
                             <h2 className='mt-4 text-center text-2xl font-bold text-gray-900'>
-                                Register as new Collector
+                                Register as new user
                             </h2>
                         </div>
                         <div className="relative">

@@ -33,7 +33,7 @@ const Login = () => {
             }else if(role === "supplier"){
                 navigate("/supplier/Dashboard");
             }else if(role === "delivery"){
-                navigate("/DeliveryDashboard");
+                navigate("/Delivery/Dashboard");
             }else if(role === "admin"){
                 navigate("/Admin/Dashboard");
             }else{
