@@ -6,6 +6,7 @@ import chilli from '../../assets/chilli.jpg';
 import SideBar from '../../components/CollectingCenter/CollectorSideBar'
 import NavBar from '../../components/CollectingCenter/CollectorNavBar'
 import { FiEdit, FiEye, FiPhoneCall  } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 function CollectorStore() {
 
@@ -22,15 +23,17 @@ function CollectorStore() {
             <SideBar/>
             <div className='flex p-2 flex-col flex-1'>
                 <div className="flex flex-col">
-                    <div className="font-semibold text-2xl  -mt-12 mb-5">Store</div>
+                    <div className="font-semibold text-xl  -mt-12 mb-5">Branches</div>
                     <div className="flex flex-row gap-3">
 
-                    <div className="font-normal text-gray-400 text-xl">Store</div>{">"}
-                    <div className="font-normal text-xl">Home</div>
+                    <div className="font-normal text-gray-400 text-md">Branches</div>{">"}
+                    <div className="font-normal text-md">Home</div>
                     </div>
                 </div>
                 <div className="flex justify-end p-2 bg-gray-100">
-                    <div className="flex justify-center items-center p-2 bg-white mt-4 border-gray-300 rounded-2xl shadow-lg w-36 cursor-pointer">Add New Branch</div>
+                    <Link to="/Collector/CollectorStore/AddBranch">
+                        <div className="flex justify-center items-center p-2 bg-white mt-4 border-gray-300 rounded-2xl shadow-lg w-36 cursor-pointer">Add New Branch</div>
+                    </Link>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-white mt-4 border-gray-300 rounded-2xl shadow-lg">
                     <div className="flex flex-row justify-between gap-4 w-full">

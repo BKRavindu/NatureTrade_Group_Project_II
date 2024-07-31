@@ -14,8 +14,14 @@ import CollectorDash from './pages/CollectingCenter/CollectorDash';
 import CollectorStore from './pages/CollectingCenter/CollectorStore';
 import CollectorSuppliers from './pages/CollectingCenter/CollectorSuppliers';
 import CollectorRequests from './pages/CollectingCenter/CollectorRequests';
+import CollectorOrders from './pages/CollectingCenter/CollectorOrders';
 import CollectorBidding from './pages/CollectingCenter/CollectorBidding';
+import CollectorTender from './pages/CollectingCenter/CollectorTender';
 import CollectorProfile from './pages/CollectingCenter/CollectorProfile';
+import ViewSupplier from './pages/CollectingCenter/ViewSupplier';
+import ViewRequest from './pages/CollectingCenter/ViewRequest.jsx';
+import ViewOrder from './pages/CollectingCenter/ViewOrder.jsx';
+import AddBranch from './pages/CollectingCenter/AddBranch.jsx';
 import BuyerDash from './pages/Buyer/BuyerDash';
 import BOrders from './pages/Buyer/BOrders';
 import BCollectingcenter from './pages/Buyer/BCollectingcenter';
@@ -84,8 +90,14 @@ function App() {
         <Route path="/Collector/CollectorStore" element={<CollectorStore/>}/>
         <Route path="/Collector/CollectorSuppliers" element={<CollectorSuppliers/>}/>
         <Route path="/Collector/CollectorRequests" element={<CollectorRequests/>}/>
+        <Route path="/Collector/CollectorOrders" element={<CollectorOrders/>}/>
         <Route path="/Collector/CollectorBidding" element={<CollectorBidding/>}/>
+        <Route path="/Collector/CollectorTender" element={<CollectorTender/>}/>
         <Route path="/Collector/CollectorProfile" element={<CollectorProfile/>}/>
+        <Route path="/Collector/CollectorSuppliers/ViewSupplier" element={<ViewSupplier/>}/>
+        <Route path="/Collector/CollectorRequests/ViewRequest" element={<ViewRequest/>}/>
+        <Route path="/Collector/CollectorOrders/ViewOrder" element={<ViewOrder/>}/>
+        <Route path="/Collector/CollectorStore/AddBranch" element={<AddBranch/>}/>
         <Route path="/BuyerDash" element={<BuyerDash/>}/>
         <Route path="/BOrders" element={<BOrders/>}/>
         <Route path="/BCollectingcenter" element={<BCollectingcenter/>}/>
