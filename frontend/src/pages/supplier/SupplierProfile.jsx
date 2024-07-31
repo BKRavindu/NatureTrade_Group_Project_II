@@ -40,7 +40,8 @@ const SupplierProfile = () => {
                         <div className="flex  p-4 rounded-lg justify-between">
                             <div className="text-xl font-semibold">Details</div>
                             <div className="flex gap-2 pl-3 pr-4 py-1 rounded-xl items-center border border-gray-300">
-                                <i className='bx bx-edit text-xl font-semibold' ></i>
+                                <i className='bx bx-edit font-semibold' ></i>
+                                <div className="text-xl font-semibold">Edit</div>
 
                                 
                             </div>

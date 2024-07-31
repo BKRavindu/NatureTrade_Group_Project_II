@@ -26,16 +26,16 @@ const Login = () => {
             role
         }).then((res) => {
             toast.success("Login success");
-            if (role === "seller") {
-                navigate("/CollectorDash");
+            if (role === "collecting center") {
+                navigate("/Collector/CollectorDash");
             } else if(role === "buyer") {
-                navigate("/BuyerDash");
+                navigate("/Buyer/BuyerDash");
             }else if(role === "supplier"){
-                navigate("/SellerDash");
+                navigate("/supplier/Dashboard");
             }else if(role === "delivery"){
-                navigate("/DeliveryDash");
+                navigate("/DeliveryDashboard");
             }else if(role === "admin"){
-                navigate("/AdminDash");
+                navigate("/Admin/Dashboard");
             }else{
                 navigate("/");
             }
@@ -106,7 +106,7 @@ const Login = () => {
                                 className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md bg-gray-100"
                             >
                                 <option value="">Select role</option>
-                                <option value="seller">Seller</option>
+                                <option value="collecting center">Collecting Center</option>
                                 <option value="buyer">Buyer</option>
                                 <option value="supplier">Supplier</option>
                                 <option value="delivery">Delivery Company</option>

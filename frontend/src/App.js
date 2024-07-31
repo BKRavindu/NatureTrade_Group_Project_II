@@ -104,24 +104,24 @@ function App() {
         <Route path="/Collector/CollectorOrders" element={<CollectorOrders/>}/>
         <Route path="/Collector/CollectorBidding" element={<CollectorBidding/>}/>
         <Route path="/Collector/CollectorTender" element={<CollectorTender/>}/>
-        <Route path="/Collector/CollectorProfile" element={<CollectorProfile}/>
+        <Route path="/Collector/CollectorProfile" element={<CollectorProfile/>}/>
         <Route path="/Collector/CollectorSuppliers/ViewSupplier" element={<ViewSupplier/>}/>
         <Route path="/Collector/CollectorRequests/ViewRequest" element={<ViewRequest/>}/>
         <Route path="/Collector/CollectorOrders/ViewOrder" element={<ViewOrder/>}/>
         <Route path="/Collector/CollectorStore/AddBranch" element={<AddBranch/>}/>
         <Route path="/supplier/Dashboard" element={<SupplierDash/>}/>
         <Route path="/supplier/Requests" element={<Requests/>}/>
-        <Route path="supplier/Requestform" element={<Requestform/>}/>
+        <Route path="/supplier/Requestform" element={<Requestform/>}/>
         <Route path="/supplier/SupplierStore" element={<SupplierStore/>}/>
         <Route path="/supplier/Advertisements" element={<Advertisements/>}/>
         <Route path="/supplier/SupplierContact" element={<SupplierContact/>}/>
         <Route path="/supplier/SupplierProfile" element={<SupplierProfile/>}/>
         <Route path="/Requests" element={<Requests/>}/>
         <Route path="/Admin/Profile" element={<Profile/>}/>
-        {<Route path="/activation/:activation_token" element={<ActivationPage /> } />}
+        <Route path="/activation/:activation_token" element={<ActivationPage />}/>
       </Routes>
       <CustomToastContainer />
-    </BrowserRouter/>
+    </BrowserRouter>
   );
 }
 
