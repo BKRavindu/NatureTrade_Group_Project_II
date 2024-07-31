@@ -1,6 +1,7 @@
 import React from 'react'
 import BuyerNavBar from '../../components/Buyer/BuyerNavBar'
 import BuyerSideBar from '../../components/Buyer/BuyerSideBar'
+import { Link } from 'react-router-dom'
 
 
 function BDelivery() {
@@ -38,41 +39,35 @@ function BDelivery() {
                                 <td className='px-8 py-5 text-sm  '>D007</td>
                                 <td className='px-8 py-5 text-sm'>DeliveryRBIT</td>
                                 <td className='px-8 py-5 text-sm'><span className='text-red-400 font-semibold'>Not Ordered</span></td>
-                                <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                Select
-                                </button>
+                                <td className='px-4 py-3 text-lg'>
+                                <Link to="/Buyer/BOrderView">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </Link>
+                                </td>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>D006</td>
                                 <td className='px-8 py-5 text-sm'>Conquer Delivery Smith</td>
                                 <td className='px-8 py-5 text-sm'><span className='text-red-400 font-semibold'>Not Ordere</span></td>
-                                <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                Select
-                                </button>
+                                <td className='px-4 py-3 text-lg'><ion-icon name="eye-outline"></ion-icon></td>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>D004</td>
                                 <td className='px-8 py-5 text-sm'>courien</td>
                                 <td className='px-8 py-5 text-sm'><span className='text-green-600 font-semibold'>Ordered</span></td>
-                                <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                Select
-                                </button>
+                                <td className='px-4 py-3 text-lg'><ion-icon name="eye-outline"></ion-icon></td>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>D007</td>
                                 <td className='px-8 py-5 text-sm'>Quick might</td>
                                 <td className='px-8 py-5 text-sm'><span className='text-green-600 font-semibold'>Ordered</span></td>
-                                <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                Select
-                                </button>
+                                <td className='px-4 py-3 text-lg'><ion-icon name="eye-outline"></ion-icon></td>
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-8 py-5 text-sm'>D014</td>
                                 <td className='px-8 py-5 text-sm'>Shippingzilla</td>
                                 <td className='px-8 py-5 text-sm'><span className='text-red-400 font-semibold'>Not Ordered</span></td>
-                                <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                                Select
-                                </button>
+                                <td className='px-4 py-3 text-lg'><ion-icon name="eye-outline"></ion-icon></td>
                             </tr>
                         </tbody>
 

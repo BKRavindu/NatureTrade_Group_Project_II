@@ -28,7 +28,12 @@ import BCollectingcenter from './pages/Buyer/BCollectingcenter';
 import BDelivery from './pages/Buyer/BDelivery';
 import BStore from './pages/Buyer/BStore';
 import BBidding from './pages/Buyer/BBidding';
-import BProfile from './pages/Buyer/BProfile.jsx';
+import BProfile from './pages/Buyer/BProfile';
+import BSelectOrder from './pages/Buyer/BSelectOrder';
+import BEditProfile from './pages/Buyer/BEditProfile';
+import BOrderView from './pages/Buyer/BOrderView';
+import BEditOrder from './pages/Buyer/BEditOrder';
+import BCollectorProfile from './pages/Buyer/BCollectorProfile';
 import AdminDash from './pages/admin/AdminDash';
 import Users from './pages/admin/Users';
 import ViewUser from './pages/admin/ViewUser';
@@ -63,8 +68,8 @@ function App() {
     <BrowserRouter>
     <CustomToastContainer />
       <Routes>
-        <Route path="/login" element={<Login /> }/>
-        <Route path="/sign-up" element={<Signup /> } />
+        <Route path="/login" element={<Login />}/>
+        <Route path="/sign-up" element={<Signup/>} />
         <Route path="/Delivery/Dashboard" element={<DeliveryDash />} />
         <Route exact path="/" element={<Homepage />}/>
         <Route path="/DeliveryDashboard" element={<DeliveryDash />} />
@@ -84,6 +89,12 @@ function App() {
         <Route path="/Buyer/BDelivery" element={<BDelivery/>}/>
         <Route path="/Buyer/BStore" element={<BStore/>}/>
         <Route path="/Buyer/BBidding" element={<BBidding/>}/>
+        <Route path="/Buyer/BSelectOrder" element={<BSelectOrder/>}/>
+        <Route path="/Buyer/BEditProfile" element={<BEditProfile/>}/>
+        <Route path="/Buyer/BOrderView" element={<BOrderView/>}/>
+        <Route path="/Buyer/BCollectorProfile" element={<BCollectorProfile/>}/>
+        <Route path="/Buyer/BEditOrder" element={<BEditOrder/>}/>
+        <Route path="/Buyer/BProfile" element={<BProfile/>}/>
         <Route path="/SupplierDash" element={<SupplierDash/>}/>
         <Route path="/Admin/ViewChat" element={<ViewChat/>}/>
         <Route path="/Collector/CollectorDash" element={<CollectorDash/>}/>
@@ -93,16 +104,11 @@ function App() {
         <Route path="/Collector/CollectorOrders" element={<CollectorOrders/>}/>
         <Route path="/Collector/CollectorBidding" element={<CollectorBidding/>}/>
         <Route path="/Collector/CollectorTender" element={<CollectorTender/>}/>
-        <Route path="/Collector/CollectorProfile" element={<CollectorProfile/>}/>
+        <Route path="/Collector/CollectorProfile" element={<CollectorProfile}/>
         <Route path="/Collector/CollectorSuppliers/ViewSupplier" element={<ViewSupplier/>}/>
         <Route path="/Collector/CollectorRequests/ViewRequest" element={<ViewRequest/>}/>
         <Route path="/Collector/CollectorOrders/ViewOrder" element={<ViewOrder/>}/>
         <Route path="/Collector/CollectorStore/AddBranch" element={<AddBranch/>}/>
-        <Route path="/BuyerDash" element={<BuyerDash/>}/>
-        <Route path="/BOrders" element={<BOrders/>}/>
-        <Route path="/BCollectingcenter" element={<BCollectingcenter/>}/>
-        <Route path="/BDelivery" element={<BDelivery/>}/>
-        <Route path="/BProfile" element={<BProfile/>}/>
         <Route path="/supplier/Dashboard" element={<SupplierDash/>}/>
         <Route path="/supplier/Requests" element={<Requests/>}/>
         <Route path="supplier/Requestform" element={<Requestform/>}/>
@@ -112,11 +118,10 @@ function App() {
         <Route path="/supplier/SupplierProfile" element={<SupplierProfile/>}/>
         <Route path="/Requests" element={<Requests/>}/>
         <Route path="/Admin/Profile" element={<Profile/>}/>
-        <Route path="/activation/:activation_token" element={<ActivationPage /> } />
+        {<Route path="/activation/:activation_token" element={<ActivationPage /> } />}
       </Routes>
       <CustomToastContainer />
-    </BrowserRouter>
-    
+    </BrowserRouter/>
   );
 }
 

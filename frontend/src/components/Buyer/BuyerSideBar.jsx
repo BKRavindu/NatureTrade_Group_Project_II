@@ -23,7 +23,7 @@ function BuyerSideBar() {
           className={({ isActive }) => 
             isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>
-        <i className='bx bx-notepad text-gray-700 text-xl'></i>
+        <i className='bx bx-store text-gray-700 text-xl'></i>
         <span className='font-sans ml-4 font-light'>Collecting Center</span>
         </NavLink>
 
@@ -58,14 +58,14 @@ function BuyerSideBar() {
         </NavLink>
 
 
-        <NavLink 
+        {/* <NavLink 
           to="/Buyer/BDelivery" 
           className={({ isActive }) => 
             isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>
         <i className='bx bx-notepad text-gray-700 text-xl'></i>
         <span className='font-sans ml-4 font-light'>Delivery</span>
-        </NavLink>
+        </NavLink> */}
 
 
         <NavLink 

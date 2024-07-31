@@ -1,6 +1,7 @@
 import React from 'react';
 import BuyerNavBar from '../../components/Buyer/BuyerNavBar'
 import BuyerSideBar from '../../components/Buyer/BuyerSideBar'
+import { Link } from 'react-router-dom'
 import cinnamon from '../../assets/cinnamon.jpeg';
 import Cardamon from '../../assets/Cardamon.jpg';
 import clove from '../../assets/clove.jpeg';
@@ -29,7 +30,7 @@ function BStore() {
         <BuyerSideBar />
             <div className="flex p-2 flex-col flex-1  ">
                 <div className="flex flex-col">
-                    <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Dashboard</div>
+                    <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Store</div>
                     <div className="flex flex-row gap-3">
 
                     <div className="font-normal text-gray-400 text-md">Dashboard</div>{">"}
@@ -45,9 +46,11 @@ function BStore() {
                             Cinnamon
                         <span className="text-sm font-normal">Center 1</span>
                         </div>
-                        <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                        Order
-                         </button>
+                    <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    <Link to="/Buyer/BSelectOrder">
+                    <div className="font-semibold text-sm">Order</div>
+                    </Link>
+                    </button>
                     </div>
 
 
@@ -58,8 +61,11 @@ function BStore() {
                         <span className="text-sm font-normal">Center 4</span>
                         </div>
                         <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                        Order
-                         </button>
+                        <Link to="/Buyer/BSelectOrder">
+                        <div className="font-semibold text-sm">Order</div>
+                        </Link>
+                        </button>
+              
                     </div>
 
                     <div className="w-72 h-72 flex flex-col gap-2 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-lg shadow-lg">
@@ -69,8 +75,10 @@ function BStore() {
                         <span className="text-sm font-normal">Center 1</span>
                         </div>
                         <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                        Order
-                         </button>
+                    <Link to="/Buyer/BSelectOrder">
+                    <div className="font-semibold text-sm">Order</div>
+                    </Link>
+                    </button>
                     </div>
                     </div>
 
@@ -83,8 +91,10 @@ function BStore() {
                         <span className="text-sm font-normal">Center 3,Center 2</span>
                         </div>
                         <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                        Order
-                         </button>
+                        <Link to="/Buyer/BSelectOrder">
+                        <div className="font-semibold text-sm">Order</div>
+                        </Link>
+                        </button>
                     </div>
 
                     <div className="w-72 h-72 flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-lg shadow-lg">
@@ -94,8 +104,10 @@ function BStore() {
                         <span className="text-sm font-normal">Center 3</span>
                         </div>
                         <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                        Order
-                         </button>
+                        <Link to="/Buyer/BSelectOrder">
+                        <div className="font-semibold text-sm">Order</div>
+                        </Link>
+                        </button>
                     </div>
 
                     <div className="w-72 h-72 flex flex-col gap-2 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-lg shadow-lg">
@@ -105,8 +117,10 @@ function BStore() {
                         <span className="text-sm font-normal">Center 1</span>
                         </div>
                         <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                        Order
-                         </button>
+                    <Link to="/Buyer/BSelectOrder">
+                    <div className="font-semibold text-sm">Order</div>
+                    </Link>
+                    </button>
                     </div>
 
                 </div>
@@ -120,8 +134,10 @@ function BStore() {
                     <span className="text-sm font-normal">Center 2, Center 3</span>
                     </div>
                     <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                               Order
-                     </button>
+                    <Link to="/Buyer/BSelectOrder">
+                    <div className="font-semibold text-sm">Order</div>
+                    </Link>
+                </button>
                 </div>
                 </div>
                 
