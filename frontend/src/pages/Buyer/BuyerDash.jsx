@@ -2,7 +2,7 @@ import React from 'react'
 
 import BuyerSideBar from '../../components/Buyer/BuyerSideBar'
 import BuyerNavBar from '../../components/Buyer/BuyerNavBar'
-import truck from '../../assets/undraw_delivery_truck_vt6p (1).svg'
+import businessman from '../../assets/undraw_business_deal_re_up4u.svg'
 import item1 from '../../assets/item1.svg'
 import item2 from '../../assets/item2.svg'
 import item3 from '../../assets/item3.svg'
@@ -36,7 +36,7 @@ function BuyerDash() {
                         <div className="text-6xl font-normal">Hello, <span className='font-light text-2xl'>Lakshi!</span></div>
                         <div className="font-normal mt-5">You have <span className='text-red-500'>5</span> orders today.</div>
                     </div>
-                    <img src={truck} alt="" className='w-[300px] h-[150px]'   />
+                    <img src={businessman} alt="" className='w-[300px] h-[150px]'   />
                 </div>
                 <div className="flex gap-1 justify-between items-center mt-4 ">
                     

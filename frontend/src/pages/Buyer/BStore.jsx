@@ -44,11 +44,11 @@ function BStore() {
                         <img src={cinnamon} alt="" className='w-50 h-20 mt-10 ' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                             Cinnamon
-                        <span className="text-sm font-normal">Center 1</span>
+                        <span className="text-lg font-normal">Center 1</span>
                         </div>
                     <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                     <Link to="/Buyer/BSelectOrder">
-                    <div className="font-semibold text-sm">Order</div>
+                    <div className="font-semibold text-lg">Order</div>
                     </Link>
                     </button>
                     </div>
@@ -58,11 +58,11 @@ function BStore() {
                         <img src={pepper1} alt="" className='w-50 h-20 mt-10 ' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                         Pepper
-                        <span className="text-sm font-normal">Center 4</span>
+                        <span className="text-lg font-normal">Center 4</span>
                         </div>
                         <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                         <Link to="/Buyer/BSelectOrder">
-                        <div className="font-semibold text-sm">Order</div>
+                        <div className="font-semibold text-lg">Order</div>
                         </Link>
                         </button>
               
@@ -72,11 +72,11 @@ function BStore() {
                         <img src={Cardamon} alt="" className='w-50 h-20 mt-10 ' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                         Cardamom
-                        <span className="text-sm font-normal">Center 1</span>
+                        <span className="text-lg font-normal">Center 1</span>
                         </div>
                         <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                     <Link to="/Buyer/BSelectOrder">
-                    <div className="font-semibold text-sm">Order</div>
+                    <div className="font-semibold text-lg">Order</div>
                     </Link>
                     </button>
                     </div>
@@ -88,11 +88,11 @@ function BStore() {
                         <img src={ginger} alt="" className='w-50 h-20 mt-10 ' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                         Ginger
-                        <span className="text-sm font-normal">Center 3,Center 2</span>
+                        <span className="text-lg font-normal">Center 3,Center 2</span>
                         </div>
                         <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                         <Link to="/Buyer/BSelectOrder">
-                        <div className="font-semibold text-sm">Order</div>
+                        <div className="font-semibold text-lg">Order</div>
                         </Link>
                         </button>
                     </div>
@@ -101,11 +101,11 @@ function BStore() {
                         <img src={clove} alt="" className='w-50 h-20 mt-10 ' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                         Clove
-                        <span className="text-sm font-normal">Center 3</span>
+                        <span className="text-lg font-normal">Center 3</span>
                         </div>
                         <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                         <Link to="/Buyer/BSelectOrder">
-                        <div className="font-semibold text-sm">Order</div>
+                        <div className="font-semibold text-lg">Order</div>
                         </Link>
                         </button>
                     </div>
@@ -114,11 +114,11 @@ function BStore() {
                         <img src={Nutmeg1} alt="" className='w-50 h-20 mt-10 ' />
                         <div className="text-xl font-semibold flex flex-col items-center">
                         Nutmeg
-                        <span className="text-sm font-normal">Center 1</span>
+                        <span className="text-lg font-normal">Center 1</span>
                         </div>
                         <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                     <Link to="/Buyer/BSelectOrder">
-                    <div className="font-semibold text-sm">Order</div>
+                    <div className="font-semibold text-lg">Order</div>
                     </Link>
                     </button>
                     </div>
@@ -131,11 +131,11 @@ function BStore() {
                     <img src={spices} alt="" className='w-50 h-20 mt-10 ' />
                     <div className="text-xl font-semibold flex flex-col items-center">
                     Other
-                    <span className="text-sm font-normal">Center 2, Center 3</span>
+                    <span className="text-lg font-normal">Center 2, Center 3</span>
                     </div>
                     <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                     <Link to="/Buyer/BSelectOrder">
-                    <div className="font-semibold text-sm">Order</div>
+                    <div className="font-semibold text-lg">Order</div>
                     </Link>
                 </button>
                 </div>

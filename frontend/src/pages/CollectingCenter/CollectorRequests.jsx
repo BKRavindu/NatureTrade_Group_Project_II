@@ -29,22 +29,22 @@ function CollectorRequests() {
                     </div>
                     <table className=''>
                         <tr className='font-semibold font-center '>
-                            <th className='px-6 py-3  text-sm font-semibold '>Advertisement No</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Date</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Time</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Requested product</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Request Status</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Action</th>         
+                            <th className='px-6 py-3  text-lg font-semibold '>Advertisement No</th>
+                            <th className='px-6 py-3  text-lg font-semibold '>Date</th>
+                            <th className='px-6 py-3  text-lg font-semibold '>Time</th>
+                            <th className='px-6 py-3  text-lg font-semibold '>Requested product</th>
+                            <th className='px-6 py-3  text-lg font-semibold '>Request Status</th>
+                            <th className='px-6 py-3  text-lg font-semibold '>Action</th>         
 
                             
                         </tr>
                         <tbody className='font-light text-center'>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
-                                <td className='px-8 py-5 text-sm  '>007</td>
-                                <td className='px-8 py-5 text-sm'>2024-04-01</td>
-                                <td className='px-8 py-5 text-sm'>6.00 PM</td>
-                                <td className='px-8 py-5 text-sm'>Cinnamon</td>
-                                <td className="px-8 py-5 text-sm">
+                                <td className='px-8 py-5 text-lg  '>007</td>
+                                <td className='px-8 py-5 text-lg'>2024-04-01</td>
+                                <td className='px-8 py-5 text-lg'>6.00 PM</td>
+                                <td className='px-8 py-5 text-lg'>Cinnamon</td>
+                                <td className="px-8 py-5 text-lg">
 
                                 <button className="bg-green-600 text-black font-semibold rounded px-4 py-2">
                                
@@ -52,7 +52,7 @@ function CollectorRequests() {
                                     Processing
                                 </button>
                             </td>  
-                            <td className='flex justify-center px-4 py-3 text-sm'><Link to="/Collector/CollectorRequests/ViewRequest"><FiEye className='m-2 cursor-pointer'/></Link><FiPhoneCall  className='m-2 cursor-pointer'/></td>                          
+                            <td className='flex justify-center px-4 py-3 text-lg'><Link to="/Collector/CollectorRequests/ViewRequest"><FiEye className='m-2 cursor-pointer'/></Link><FiPhoneCall  className='m-2 cursor-pointer'/></td>                          
 
                            
                                                       
