@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 
-function SideBar() {
+const SideBar = () => {
   return (
     <div className="flex flex-col m-4 font-normal mt-[60px]">
         <NavLink 
@@ -24,7 +24,7 @@ function SideBar() {
         </NavLink>
 
 
-        <NavLink to="/Delivery/Contact" 
+        <NavLink to="/Delivery/DeliveryContact" 
           className={({ isActive }) => 
           isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>
@@ -32,6 +32,7 @@ function SideBar() {
           <i className='bx bx-chat text-gray-700 text-xl'></i>
           <span className='font-sans ml-4 font-light'>Contact</span>
         </NavLink>
+
         <NavLink to="/Delivery/Subscription"
           className={({ isActive }) => 
           isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
@@ -40,13 +41,12 @@ function SideBar() {
           <span className='font-sans ml-4 font-light'>Subscription</span>
         </NavLink>
 
-        <NavLink to="/Delivery/Profile" 
+        <NavLink to="/Delivery/DeliveryProfile" 
           className={({ isActive }) => 
           isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>
           <i className='bx bx-user text-gray-700 text-xl'></i>
           <span className='font-sans ml-4 font-light'>Profile</span>
-            
         </NavLink>
 
           <div className="p-2 flex items-center">
@@ -57,4 +57,4 @@ function SideBar() {
   )
 }
 
-export default SideBar
+export default SideBar;
