@@ -17,14 +17,14 @@ export default function AdminDash() {
         <div className="flex p-2 flex-col flex-1 ml-[250px]">
           {/* header components================ */}
           <div className="flex flex-col">
-            <div className="font-semibold text-xl mb-2 -mt-12 mb-5">
+            <div className="font-semibold text-2xl mb-2 -mt-12 mb-5">
               Dashboard
             </div>
 
             <div className="flex flex-row gap-3">
-              <div className="font-normal text-gray-400 text-md">Dashboard</div>
+              <div className="font-normal text-gray-400 text-xl">Dashboard</div>
               {">"}
-              <div className="font-normal text-md">Home</div>
+              <div className="font-normal text-xl">Home</div>
             </div>
           </div>
           {/* ============================ */}
@@ -35,7 +35,7 @@ export default function AdminDash() {
               <div className="text-6xl font-normal">
                 Welcome, <span className="font-light text-2xl">Admin</span>
               </div>
-              <div className="font-normal mt-5">
+              <div className="font-normal mt-5 text-lg">
                 You have <span className="text-red-500">3</span> Notification &{" "}
                 <span className="text-red-500">7</span> Pending Approval.
               </div>

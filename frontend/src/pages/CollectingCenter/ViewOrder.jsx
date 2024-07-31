@@ -1,10 +1,10 @@
 import React from 'react'
-import SideBar from '../../components/supplier/SideBar'
-import NavBar from '../../components/supplier/NavBar'
+import SideBar from '../../components/CollectingCenter/CollectorSideBar'
+import NavBar from '../../components/CollectingCenter/CollectorNavBar'
 import logo from '../../assets/Untitled design (1) 1.svg';
 import {Link, useNavigate } from 'react-router-dom'
 
-const Advertisements = () => {
+const ViewOrder = () => {
     const navigate = useNavigate();
 
     const handleRequestClick = () => {
@@ -18,11 +18,11 @@ const Advertisements = () => {
                 <SideBar />
                 <div className="flex flex-col flex-1">
                     <div className="flex flex-col">
-                        <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Advertisement</div>
+                        <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Requests</div>
                         <div className="flex flex-row gap-3">
     
-                            <div className="font-normal text-gray-400 text-xl">Dashboard</div>{">"}
-                            <div className="font-normal text-xl">Advertisement</div>
+                            <div className="font-normal text-gray-400 text-xl">Requests</div>{">"}
+                            <div className="font-normal text-xl">View Request</div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-3 m-3 bg-white px-5 mx-20 py-5 mx-20 max-w-3xl ml-[150px] mt-9 rounded-md">
@@ -32,7 +32,7 @@ const Advertisements = () => {
                                 <div className="text-2xl font-semibold text-center ml-3">NatureTrade</div>
                             </div>
                             <div className="flex gap-2 items-center">                        
-                                <div className="font-light text-lg mr-3">Posted Date : 2024-05-21</div>
+                                <div className="font-light text-lg mr-3">Order Placed Date : 2024-05-21</div>
                                 <div className="font-light text-lg">15:20:28</div>
                             </div>
                         </div>
@@ -84,28 +84,35 @@ const Advertisements = () => {
                                     <div className="font-normal size-md text-lg">Product Name</div>
                                     <div className="font-normal size-md text-lg">Product Category</div>
                                     <div className="font-normal size-md text-lg">Quantity</div>
-                                    <div className="font-normal size-md text-lg">Price Range:</div>
                                     <div className="font-normal size-md text-lg">Required Centers</div>                                    
+                                    <div className="font-normal size-md text-lg">Required center(s)</div>
                                     <div className="font-normal size-md text-lg">Required Date</div>
                                 </div>
                                 <div className="flex flex-col">
                                 <span className='text-lg'>:Cinnamon</span>
                                 <span className='text-lg'>:Alba</span>
-                                <span className='text-lg'>:10Kg</span>
-                                <span className='text-lg'>:Rs.40,000-Rs.50,000</span>
+                                <span className='text-lg'>:25Kg</span>
                                     <span className='text-lg'>:Matara, Kandy, Rathnapura</span>
+                                    <span className='text-lg'>:Matara, Kandy</span>
                                     <span className='text-lg'>:2021-06-05</span> 
                                 </div>
                             </div>
                         </div>
                         {/* Request button */}
-                        <div className="flex justify-center mt-6">
+                        <div className="flex justify-center gap-28 mt-6">
                             <button
                                 type="button"
                                 className="bg-primary text-gray-900 font-semibold p-2 rounded-md hover:bg-primary-dark"
                                 onClick={handleRequestClick} // Add onClick handler
                             >
-                                Request
+                                Process Order
+                            </button>
+                            <button
+                                type="button"
+                                className="bg-red-500 text-gray-900 font-semibold p-2 rounded-md hover:bg-primary-dark"
+                                // onClick={handleRequestClick} // Add onClick handler
+                            >
+                                Reject Order
                             </button>
                         </div>
 
@@ -123,4 +130,4 @@ const Advertisements = () => {
       )
     }
     
-export default Advertisements
+export default ViewOrder
