@@ -32,7 +32,7 @@ function SideBar() {
             isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
           }>
         <i className='bx bx-store text-gray-700 text-xl'></i>
-        <span className='font-sans ml-4 font-semibold-600'>Store</span>
+        <span className='font-sans ml-4 font-semibold-600'>Stock</span>
         </NavLink>
 
         <NavLink

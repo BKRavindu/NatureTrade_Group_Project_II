@@ -38,11 +38,11 @@ function SupplierStore() {
             <SideBar />
             <div className="flex p-2 flex-col flex-1  ">
                 <div className="flex flex-col">
-                    <div className="font-semibold text-2xl mb-2 -mt-12 mb-5">Store</div>
+                    <div className="font-semibold text-2xl mb-2 -mt-12 mb-5">Stock</div>
                     <div className="flex flex-row gap-3">
 
                     <div className="font-normal text-gray-400 text-xl">Dashboard</div>{">"}
-                    <div className="font-normal text-xl">Store</div>
+                    <div className="font-normal text-xl">Stock</div>
                     </div>
                 </div>
                 {/* <div className="flex justify-between items-center p-4 bg-white mt-4 rounded-lg border-gray-300 rounded-2xl shadow-lg">

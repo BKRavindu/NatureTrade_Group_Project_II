@@ -15,7 +15,7 @@ require('dotenv').config();
 
 
 // Define the path to the uploads folder
-const uploadsPath = path.join("C:\\Users\\Asus\\Desktop\\Nature_Trade\\NatureTrade_Group_Project_II", "uploads");
+const uploadsPath = path.join("C:\\Users\\avindu\\Desktop\\NatureTrade_Group_Project_II\\uploads", "uploads");
 
 // Multer configuration
 const storage = multer.diskStorage({
