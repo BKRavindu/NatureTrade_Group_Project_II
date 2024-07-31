@@ -17,6 +17,8 @@ import CollectorStore from './pages/CollectingCenter/CollectorStore';
 import CollectorSuppliers from './pages/CollectingCenter/CollectorSuppliers';
 import CollectorRequests from './pages/CollectingCenter/CollectorRequests';
 import CollectorOrders from './pages/CollectingCenter/CollectorOrders';
+import CollectorAdvertisements from './pages/CollectingCenter/CollectorAdvertisements';
+import CreateAdvertisement from './pages/CollectingCenter/CreateAdvertisement.jsx';
 import CollectorBidding from './pages/CollectingCenter/CollectorBidding';
 import CollectorTender from './pages/CollectingCenter/CollectorTender';
 import CollectorProfile from './pages/CollectingCenter/CollectorProfile';
@@ -107,6 +109,8 @@ function App() {
         <Route path="/Collector/CollectorSuppliers" element={<CollectorSuppliers/>}/>
         <Route path="/Collector/CollectorRequests" element={<CollectorRequests/>}/>
         <Route path="/Collector/CollectorOrders" element={<CollectorOrders/>}/>
+        <Route path="/Collector/CollectorAdvertisements" element={<CollectorAdvertisements/>}/>
+        <Route path="/Collector/CollectorAdvertisements/CreateAdvertisement" element={<CreateAdvertisement/>}/>
         <Route path="/Collector/CollectorBidding" element={<CollectorBidding/>}/>
         <Route path="/Collector/CollectorTender" element={<CollectorTender/>}/>
         <Route path="/Collector/CollectorProfile" element={<CollectorProfile/>}/>

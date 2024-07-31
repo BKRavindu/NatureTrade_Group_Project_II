@@ -50,6 +50,14 @@ function SideBar() {
           <span className='font-sans ml-4 font-light'>Branches</span>
         </NavLink>
 
+        <NavLink to="/Collector/CollectorAdvertisements"
+          className={({ isActive }) => 
+          isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"
+          }>
+          <i className='bx bx-credit-card-front text-gray-700 text-xl'></i>
+          <span className='font-sans ml-4 font-light'>Advertisements</span>
+        </NavLink>
+
         <NavLink to="/Collector/CollectorBidding"
           className={({ isActive }) => 
           isActive ? "bg-white p-2 rounded-md flex items-center min-w-[227px] max-w-[230px] " : " p-2 rounded-md flex items-center min-w-[227px] max-w-[230px]"

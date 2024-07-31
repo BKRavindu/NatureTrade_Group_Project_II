@@ -27,7 +27,7 @@ function ViewProfile() {
                     <img src={profile} alt="" className='w-[150px] h-[150px] rounded-full border border-8 border-gray-200  object-cover' />
                     <div className="h-40 border-l-2 border-gray-300 my-3 "></div>
                     <div className="flex flex-col gap-3 justify-center m-5">
-                        <div className="font-semibold text-lg">John Doe</div>
+                        <div className="font-semibold text-lg">Spice Harvest Hub</div>
                         <div className="text-lg font-lg text-blue-600 px-4 py-1 bg-blue-100 rounded-lg inline-block self-center -ml-40">Collecting Center</div>
                         <div className="text-lg font-light">description</div>
                         <div className="flex gap-2 items-center justify-start">
