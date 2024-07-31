@@ -42,24 +42,21 @@ function BuyerDash() {
                     
                     <div className="flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2xl shadow-lg">
                         <img src={item1} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <div className="text-xl font-semibold">357{" "}<span className='text-xs font-normal'>Total Orders</span></div>
-                    </div>
-                    <div className="flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2xl shadow-lg">
-                        <img src={item2} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <div className="text-xl font-semibold">357{" "}<span className='text-xs font-normal'>Total Orders</span></div>
+                        <div className="text-xl font-semibold">10{" "}<span className='text-xs font-normal'>Processing Orders</span></div>
                     </div>
                     <div className="flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2xl shadow-lg">
                         <img src={item3} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <div className="text-xl font-semibold">357{" "}<span className='text-xs font-normal'>Total Orders</span></div>
+                        <div className="text-xl font-semibold">25{" "}<span className='text-xs font-normal'>Complete Orders</span></div>
+                    </div>
+                    <div className="flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2xl shadow-lg">
+                        <img src={item2} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
+                        <div className="text-xl font-semibold">357{" "}<span className='text-xs font-normal'>Rejected Orders</span></div>
                     </div>
                     <div className="flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2xl shadow-lg">
                         <img src={item4} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
                         <div className="text-xl font-semibold">357{" "}<span className='text-xs font-normal'>Total Orders</span></div>
                     </div>
-                    <div className="flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2xl shadow-lg">
-                        <img src={item2} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
-                        <div className="text-xl font-semibold">357{" "}<span className='text-xs font-normal'>Total Orders</span></div>
-                    </div>
+                   
                 </div>
                 <div className="flex flex-col gap-3 bg-white my-7 p-5 rounded-lg shadow-lg">
                     <div className="flex justify-between">
@@ -72,40 +69,36 @@ function BuyerDash() {
                     <table className=''>
                         <tr className='font-semibold font-center '>
                             <th className='px-6 py-3  text-sm font-semibold '>Order ID</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Customer</th>
                             <th className='px-6 py-3  text-sm font-semibold '>Order Date</th>
                             <th className='px-6 py-3  text-sm font-semibold '>Payment Status</th>
                             <th className='px-6 py-3  text-sm font-semibold '>Order Status</th>
                             <th className='px-6 py-3  text-sm font-semibold '>Total</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Action</th>
+                            
                         </tr>
                         <tbody className='font-light text-center'>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-4 py-3 text-sm  '>007</td>
-                                <td className='px-4 py-3 text-sm'>John Doe</td>
                                 <td className='px-4 py-3 text-sm'>2024-04-12</td>
                                 <td className='px-4 py-3 text-sm'>Paid</td>
                                 <td className='px-4 py-3 text-sm'><span className='text-green-600 font-semibold'>Processing</span></td>
                                 <td className='px-4 py-3 text-sm'>15000</td>
-                                <td className='px-4 py-3 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                                
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-4 py-3 text-sm'>006</td>
-                                <td className='px-4 py-3 text-sm'>Jane Smith</td>
                                 <td className='px-4 py-3 text-sm'>2024-04-10</td>
                                 <td className='px-4 py-3 text-sm'>Paid</td>
                                 <td className='px-4 py-3 text-sm'><span className='text-red-400 font-semibold'>Cancelled</span></td>
                                 <td className='px-4 py-3 text-sm'>30000</td>
-                                <td className='px-4 py-3 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                               
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
                                 <td className='px-4 py-3 text-sm'>004</td>
-                                <td className='px-4 py-3 text-sm'>Michael</td>
                                 <td className='px-4 py-3 text-sm'>2024-04-04</td>
                                 <td className='px-4 py-3 text-sm'>Paid</td>
                                 <td className='px-4 py-3 text-sm'><span className='text-green-00 font-semibold'>Processing</span></td>
                                 <td className='px-4 py-3 text-sm'>25000</td>
-                                <td className='px-4 py-3 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                               
                             </tr>
                         </tbody>
 

@@ -84,16 +84,16 @@ const Advertisements = () => {
                                     <div className="font-normal size-md text-lg">Product Name</div>
                                     <div className="font-normal size-md text-lg">Product Category</div>
                                     <div className="font-normal size-md text-lg">Quantity</div>
+                                    <div className="font-normal size-md text-lg">Price Range:</div>
                                     <div className="font-normal size-md text-lg">Required Centers</div>                                    
-                                    <div className="font-normal size-md text-lg">Required center(s)</div>
                                     <div className="font-normal size-md text-lg">Required Date</div>
                                 </div>
                                 <div className="flex flex-col">
                                 <span className='text-lg'>:Cinnamon</span>
                                 <span className='text-lg'>:Alba</span>
-                                <span className='text-lg'>:25Kg</span>
+                                <span className='text-lg'>:10Kg</span>
+                                <span className='text-lg'>:Rs.40,000-Rs.50,000</span>
                                     <span className='text-lg'>:Matara, Kandy, Rathnapura</span>
-                                    <span className='text-lg'>:Matara, Kandy</span>
                                     <span className='text-lg'>:2021-06-05</span> 
                                 </div>
                             </div>

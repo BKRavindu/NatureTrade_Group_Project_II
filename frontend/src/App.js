@@ -4,7 +4,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
-import {LoginPage, SignUpPage, ActivationPage} from "./Routes.js";
+import {Login, Signup, ActivationPage} from "./Routes.js";
 import DeliveryDash from './pages/deliveryCompany/DeliveryDash';
 import OrderView from './pages/deliveryCompany/OrderView';
 import Order from './pages/deliveryCompany/Order';
@@ -26,6 +26,8 @@ import BuyerDash from './pages/Buyer/BuyerDash';
 import BOrders from './pages/Buyer/BOrders';
 import BCollectingcenter from './pages/Buyer/BCollectingcenter';
 import BDelivery from './pages/Buyer/BDelivery';
+import BStore from './pages/Buyer/BStore';
+import BBidding from './pages/Buyer/BBidding';
 import BProfile from './pages/Buyer/BProfile.jsx';
 import AdminDash from './pages/admin/AdminDash';
 import Users from './pages/admin/Users';
@@ -41,9 +43,7 @@ import Requestform from './pages/supplier/Requestform.jsx';
 import Advertisements from './pages/supplier/Advertisements.jsx';
 import SupplierProfile from './pages/supplier/SupplierProfile.jsx'
 import Homepage from './components/Homepage/Homepage.jsx';
-
 import SupplierContact from './pages/supplier/SupplierContact.jsx';
-
 import CustomToastContainer from './components/CustomToastContainer';
 
 
@@ -63,9 +63,10 @@ function App() {
     <BrowserRouter>
     <CustomToastContainer />
       <Routes>
-      <Route exact path="/" element={<Homepage />}/>
-        <Route path="/login" element={<LoginPage /> } />
-        <Route path="/sign-up" element={<SignUpPage /> } />
+        <Route path="/login" element={<Login /> }/>
+        <Route path="/sign-up" element={<Signup /> } />
+        <Route path="/Delivery/Dashboard" element={<DeliveryDash />} />
+        <Route exact path="/" element={<Homepage />}/>
         <Route path="/DeliveryDashboard" element={<DeliveryDash />} />
         <Route path="/Delivery/OrderView" element={<OrderView />} />
         <Route path="/Delivery/Order" element={<Order />} />
@@ -76,6 +77,14 @@ function App() {
         <Route path="/Admin/ViewUser" element={<ViewUser/>}/>
         <Route path="/Admin/Contact" element={<Contact/>}/>
         <Route path="/Admin/Centers" element={<Centers/>}/>
+        <Route path="/CollectorDash" element={<CollectorDash/>}/>
+        <Route path="/Buyer/BuyerDash" element={<BuyerDash/>}/>
+        <Route path="/Buyer/BOrders" element={<BOrders/>}/>
+        <Route path="/Buyer/BCollectingcenter" element={<BCollectingcenter/>}/>
+        <Route path="/Buyer/BDelivery" element={<BDelivery/>}/>
+        <Route path="/Buyer/BStore" element={<BStore/>}/>
+        <Route path="/Buyer/BBidding" element={<BBidding/>}/>
+        <Route path="/SupplierDash" element={<SupplierDash/>}/>
         <Route path="/Admin/ViewChat" element={<ViewChat/>}/>
         <Route path="/Collector/CollectorDash" element={<CollectorDash/>}/>
         <Route path="/Collector/CollectorStore" element={<CollectorStore/>}/>
