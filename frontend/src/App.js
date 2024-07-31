@@ -36,6 +36,7 @@ import BEditProfile from './pages/Buyer/BEditProfile';
 import BOrderView from './pages/Buyer/BOrderView';
 import BEditOrder from './pages/Buyer/BEditOrder';
 import BCollectorProfile from './pages/Buyer/BCollectorProfile';
+import BTender from './pages/Buyer/BTender';
 import AdminDash from './pages/admin/AdminDash';
 import Users from './pages/admin/Users';
 import ViewUser from './pages/admin/ViewUser';
@@ -98,6 +99,7 @@ function App() {
         <Route path="/Buyer/BCollectorProfile" element={<BCollectorProfile/>}/>
         <Route path="/Buyer/BEditOrder" element={<BEditOrder/>}/>
         <Route path="/Buyer/BProfile" element={<BProfile/>}/>
+        <Route path="/Buyer/BTender" element={<BTender/>}/>
         <Route path="/SupplierDash" element={<SupplierDash/>}/>
         <Route path="/Admin/ViewChat" element={<ViewChat/>}/>
         <Route path="/Collector/CollectorDash" element={<CollectorDash/>}/>

@@ -10,14 +10,14 @@ function BSelectOrder() {
         <BuyerNavBar />
         <div className="flex">
         <BuyerSideBar />
-        <div className="flex flex-col flex-1 ml-[250px]">
+        <div className="flex flex-col flex-1 ">
                 <div className="flex flex-col">
                     <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Get Order</div>
                     <div className="flex flex-row gap-3">
 
 
                         <div className="font-normal text-gray-400 text-md">Dashboard</div>{">"}
-
+                        <div className="font-normal text-md">Store</div>{">"}
                         <div className="font-normal text-md">Get Order</div>
                     </div>
                 </div>
@@ -48,6 +48,16 @@ function BSelectOrder() {
                                 <div className="flex justify-end gap-10  w-full">
                                     <div className="flex gap-5 p-1 rounded-md  items-center justify-start  w-[300px] border border-2 border-gray bb-2 w-full">
                                         <input type="text" placeholder="Name" className="ml-2 border-none  focus:outline-none text-gray-500 font-light w-full " value={"10kg"} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex gap-2 justify-between w-full border-b border-gray-100 p-4">
+                                <div className="flex w-[750px]">
+                                    <div className="font-normal text-lg  ">Price</div>
+                                </div>
+                                <div className="flex justify-end gap-10  w-full">
+                                    <div className="flex gap-5 p-1 rounded-md  items-center justify-start  w-[300px] border border-2 border-gray bb-2 w-full">
+                                        <input type="text" placeholder="Name" className="ml-2 border-none  focus:outline-none text-gray-500 font-light w-full " value={"rs 10000"} />
                                     </div>
                                 </div>
                             </div>

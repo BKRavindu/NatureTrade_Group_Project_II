@@ -21,8 +21,8 @@ function BCollectorProfile() {
                 <div className="flex flex-row gap-3">
 
                     <div className="font-normal text-gray-400 text-md">Dashbord</div>{">"}
-                    <div className="font-normal text-md">Collecting Center</div>
-                    <div className="font-normal text-md">Collector Profile</div>
+                    <div className="font-normal text-md">Collecting Center</div>{">"}
+                    <div className="font-normal text-md"> Collector Profile</div>
                 </div>
             </div>
             <div className="flex gap-3-p-4 rounded-lg bg-white shadow-md mt-4 p-10 gap-14 mr-4">
@@ -30,7 +30,7 @@ function BCollectorProfile() {
                 <div className="h-40 border-l-2 border-gray-300 my-3 "></div>
                 <div className="flex flex-col gap-3 justify-center m-5">
                     <div className="font-semibold text-lg">John Doe</div>
-                    <div className="text-md font-normal text-blue-500 px-4 py-1 bg-blue-100 rounded-lg inline-block self-center -ml-40">Collecting Center</div>
+                    <div className="text-xl font-semibold text-green-600 px-6 py-1 text-xl bg-blue-100 rounded-lg inline-block self-center -ml-45">Collecting Center</div>
                     <div className="text-sm font-light">Colombo, Kulunegala, Mathara</div>
                 </div>
 

@@ -8,7 +8,7 @@ import clove from '../../assets/clove.jpeg';
 import ginger from '../../assets/ginger.jpg';
 import Nutmeg1 from '../../assets/Nutmeg1.jpg';
 import pepper1 from '../../assets/pepper1.jpg';
-
+import spices from '../../assets/spices.jpg';
 
 
 
@@ -128,7 +128,7 @@ function BStore() {
                 <div className="flex gap-2 justify-between items-center mt-4 ">
 
                 <div className="w-72 h-72 flex flex-col gap-2 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-lg shadow-lg">
-                    <img src={cinnamon} alt="" className='w-50 h-20 mt-10 ' />
+                    <img src={spices} alt="" className='w-50 h-20 mt-10 ' />
                     <div className="text-xl font-semibold flex flex-col items-center">
                     Other
                     <span className="text-sm font-normal">Center 2, Center 3</span>
