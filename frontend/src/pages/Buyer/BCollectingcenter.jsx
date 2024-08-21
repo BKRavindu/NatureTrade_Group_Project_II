@@ -1,7 +1,7 @@
 import React from 'react'
 import BuyerNavBar from '../../components/Buyer/BuyerNavBar'
 import BuyerSideBar from '../../components/Buyer/BuyerSideBar'
-
+import { Link } from 'react-router-dom'
 
 function BCollectingcenter() {
   return (
@@ -28,59 +28,61 @@ function BCollectingcenter() {
                     </div>
                     <table className=''>
                         <tr className='font-semibold font-center '>
-                            <th className='px-6 py-3  text-sm font-semibold '>Center ID</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Center Name</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Order Date</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Payment Status</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Order Status</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Total</th>
-                            <th className='px-6 py-3  text-sm font-semibold '>Action</th>
+                            <th className='px-6 py-3  text-lg font-semibold '>Center ID</th>
+                            <th className='px-6 py-3  text-lg font-semibold '>Center Name</th>
+                            <th className='px-6 py-3  text-lg font-semibold '>Action</th>
+                            
                         </tr>
                         <tbody className='font-light text-center'>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
-                                <td className='px-8 py-5 text-sm  '>007</td>
-                                <td className='px-8 py-5 text-sm'>John Doe</td>
-                                <td className='px-8 py-5 text-sm'>2024-04-12</td>
-                                <td className='px-8 py-5 text-sm'>Paid</td>
-                                <td className='px-8 py-5 text-sm'><span className='text-green-600 font-semibold'>Processing</span></td>
-                                <td className='px-8 py-5 text-sm'>15000</td>
-                                <td className='px-8 py-5 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                                <td className='px-8 py-5 text-lg  '>007</td>
+                                <td className='px-8 py-5 text-lg'>Green Fiber</td>
+                                <td className='px-4 py-3 text-lg'>
+                                <Link to="/Buyer/BCollectorProfile">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </Link>
+                                </td>
+                                
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
-                                <td className='px-8 py-5 text-sm'>006</td>
-                                <td className='px-8 py-5 text-sm'>Jane Smith</td>
-                                <td className='px-8 py-5 text-sm'>2024-04-10</td>
-                                <td className='px-8 py-5 text-sm'>Paid</td>
-                                <td className='px-8 py-5 text-sm'><span className='text-red-400 font-semibold'>Cancelled</span></td>
-                                <td className='px-8 py-5 text-sm'>30000</td>
-                                <td className='px-8 py-5 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                                <td className='px-8 py-5 text-lg'>006</td>
+                                <td className='px-8 py-5 text-lg'> Circular Collectors</td>
+                                <td className='px-4 py-3 text-lg'>
+                                <Link to="/Buyer/BCollectorProfile">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </Link>
+                                </td>
+                               
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
-                                <td className='px-8 py-5 text-sm'>004</td>
-                                <td className='px-8 py-5 text-sm'>Michael</td>
-                                <td className='px-8 py-5 text-sm'>2024-04-04</td>
-                                <td className='px-8 py-5 text-sm'>Paid</td>
-                                <td className='px-8 py-5 text-sm'><span className='text-green-600 font-semibold'>Processing</span></td>
-                                <td className='px-8 py-5 text-sm'>25000</td>
-                                <td className='px-8 py-5 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                                <td className='px-8 py-5 text-lg'>004</td>
+                                <td className='px-8 py-5 text-lg'>Eco Collect</td>
+                                <td className='px-4 py-3 text-lg'>
+                                <Link to="/Buyer/BCollectorProfile">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </Link>
+                                </td>
+                                
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
-                                <td className='px-8 py-5 text-sm'>007</td>
-                                <td className='px-8 py-5 text-sm'>Emily</td>
-                                <td className='px-8 py-5 text-sm'>2024-03-04</td>
-                                <td className='px-8 py-5 text-sm'>Paid</td>
-                                <td className='px-8 py-5 text-sm'><span className='text-green-600 font-semibold'>Processing</span></td>
-                                <td className='px-8 py-5 text-sm'>21000</td>
-                                <td className='px-8 py-5 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                                <td className='px-8 py-5 text-lg'>007</td>
+                                <td className='px-8 py-5 text-lg'>Green Cycle</td>
+                                <td className='px-4 py-3 text-lg'>
+                                <Link to="/Buyer/BCollectorProfile">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </Link>
+                                </td>
+                                
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
-                                <td className='px-8 py-5 text-sm'>014</td>
-                                <td className='px-8 py-5 text-sm'>Brown</td>
-                                <td className='px-8 py-5 text-sm'>2024-04-01</td>
-                                <td className='px-8 py-5 text-sm'>Paid</td>
-                                <td className='px-8 py-5 text-sm'><span className='text-green-600 font-semibold'>Processing</span></td>
-                                <td className='px-8 py-5 text-sm'>22000</td>
-                                <td className='px-8 py-5 text-sm'><ion-icon name="eye-outline"></ion-icon></td>
+                                <td className='px-8 py-5 text-lg'>014</td>
+                                <td className='px-8 py-5 text-lg'>Unity Hub</td>
+                                <td className='px-4 py-3 text-lg'>
+                                <Link to="/Buyer/BCollectorProfile">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </Link>
+                                </td>
+                                
                             </tr>
                         </tbody>
 

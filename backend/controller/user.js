@@ -15,7 +15,7 @@ require('dotenv').config();
 
 
 // Define the path to the uploads folder
-const uploadsPath = path.join("C:\\Users\\Asus\\Desktop\\store", "uploads");
+const uploadsPath = path.join("C:\\Users\\avindu\\Desktop\\NatureTrade_Group_Project_II\\uploads", "uploads");
 
 // Multer configuration
 const storage = multer.diskStorage({
@@ -33,63 +33,68 @@ const upload = multer({ storage });
 
 // Create user
 router.post("/create-user", upload.single("file"), async (req, res, next) => {
-    const { name, email, password } = req.body;
+    const { name, email, password, role } = req.body;
 
     try {
         // Check if user already exists
         const userEmail = await User.findOne({ email });
 
         if (userEmail) {
-            const filename = req.file.filename;
-            const filePath = path.join(uploadsPath, filename);
+            if (req.file) {
+                const filename = req.file.filename;
+                const filePath = path.join(uploadsPath, filename);
 
-            // Delete the uploaded file
-            fs.unlink(filePath, (err) => {
-                if (err) {
-                    console.log(err);
-                    return res.status(500).json({ message: "Error deleting file" });
-                }
-            });
-
+                // Delete the uploaded file
+                fs.unlink(filePath, (err) => {
+                    if (err) {
+                        console.log(err);
+                        return res.status(500).json({ message: "Error deleting file" });
+                    }
+                });
+            }
             return next(new ErrorHandler("User already exists", 400));
         }
 
-        const filename = req.file.filename;
-        const fileUrl = path.join("/uploads", filename); // Ensuring the correct file path
+        let userData;
+        if (role === "seller" && req.file) {
+            const filename = req.file.filename;
+            const fileUrl = path.join("/uploads", filename); // Ensuring the correct file path
 
-        const userData = {
-            name: name,
-            email: email,
-            password: password,
-            avatar: {
-                public_id: filename,
-                url: fileUrl,
-            },
-        };
+            userData = {
+                name,
+                email,
+                password,
+                role,
+                avatar: {
+                    public_id: filename,
+                    url: fileUrl,
+                },
+            };
+        } else {
+            userData = { name, email, password, role };
+        }
 
         const activationToken = createActivationToken(userData);
 
         const activationUrl = `http://localhost:3000/activation/${activationToken}`;
 
-        try {
-            await sendMail({
-                email: userData.email,
-                subject: "Activate your account",
-                message: `Hello ${userData.name}, please click on the link to activate your account: ${activationUrl}`,
-            });
-            res.status(201).json({
-                success: true,
-                message: `Please check your email: ${userData.email} to activate your account!`,
-            });
-        } catch (error) {
-            return next(new ErrorHandler(error.message, 500));
-        }
+        await sendMail({
+            email: userData.email,
+            subject: "Activate your account",
+            message: `Hello ${userData.name}, please click on the link to activate your account: ${activationUrl}`,
+        });
+
+        res.status(201).json({
+            success: true,
+            message: `Please check your email: ${userData.email} to activate your account!`,
+        });
 
     } catch (error) {
         console.error("An error occurred:", error);
         return next(new ErrorHandler("Internal Server Error", 500));
     }
 });
+
 
 // Create activation token
 const createActivationToken = (userData) => {
@@ -113,7 +118,7 @@ router.post("/activation", catchAsyncErrors(async (req, res, next) => {
             return next(new ErrorHandler("Invalid or expired token!", 400));
         }
 
-        const { name, email, password, avatar } = userData;
+        const { name, email, password, avatar, role } = userData;
 
         // Check if user already exists
         const userEmail = await User.findOne({ email });
@@ -122,12 +127,23 @@ router.post("/activation", catchAsyncErrors(async (req, res, next) => {
             return next(new ErrorHandler("User already exists", 400));
         }
 
-        const user = await User.create({
-            name,
-            email,
-            avatar,
-            password,
-        });
+        let user;
+        if (role === "seller") {
+            user = await User.create({
+                name,
+                email,
+                password,
+                role,
+                avatar,
+            });
+        } else {
+            user = await User.create({
+                name,
+                email,
+                password,
+                role,
+            });
+        }
 
         sendToken(user, 201, res);
 
@@ -138,20 +154,27 @@ router.post("/activation", catchAsyncErrors(async (req, res, next) => {
 }));
 
 
-// login user
-router.post("/login-user", catchAsyncErrors(async (req, res, next) => {
-    const { email, password } = req.body;
 
-    if (!email || !password) {
+router.post("/login-user", catchAsyncErrors(async (req, res, next) => {
+    const { email, password, role } = req.body;
+
+    if (!email || !password || !role) {
         return next(new ErrorHandler("Please provide all fields!", 400));
     }
 
-    const user = await User.findOne({ email }).select("+password");
+    // Find user and include password and role in the selection
+    const user = await User.findOne({ email }).select("+password +role");
 
     if (!user) {
         return next(new ErrorHandler("User does not exist!", 400));
     }
 
+    // Check if the role provided matches the role in the database
+    if (user.role !== role) {
+        return next(new ErrorHandler("Not a valid user role!", 400));
+    }
+
+    // Validate password
     const isPasswordValid = await user.comparePassword(password);
 
     if (!isPasswordValid) {
@@ -160,6 +183,8 @@ router.post("/login-user", catchAsyncErrors(async (req, res, next) => {
 
     sendToken(user, 200, res);
 }));
+
+
 
 //load user
 /*router.get("/getuser", isAuthenticated, catchAsyncErrors(async(req,res,next) => {

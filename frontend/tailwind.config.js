@@ -30,7 +30,7 @@ module.exports = {
       colors:{
           primary: "#E8D318",
           secondary:"#facc15",
-          brandDark:"#422006",
+          brandDark:"#854d0e",
       },
       container:{
         center:true,

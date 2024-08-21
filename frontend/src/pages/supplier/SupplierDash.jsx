@@ -2,7 +2,7 @@ import React from 'react'
 
 import SideBar from '../../components/supplier/SideBar'
 import NavBar from '../../components/supplier/NavBar'
-import truck from '../../assets/undraw_delivery_truck_vt6p (1).svg'
+import move from '../../assets/undraw_moving_re_pipp.svg'
 import item1 from '../../assets/item1.svg'
 import item2 from '../../assets/item2.svg'
 import item3 from '../../assets/item3.svg'
@@ -37,7 +37,7 @@ function SupplierDash() {
                         <div className="text-6xl font-normal">Hello, <span className='font-semibold text-2xl'>Mike!</span></div>
                         <div className="font-normal text-xl mt-5">You have <span className='text-yellow-600 font-black-900'>10</span> Requests today.</div>
                     </div>
-                    <img src={truck} alt="" className='w-[300px] h-[150px]'   />
+                    <img src={move} alt="" className='w-[300px] h-[150px]'  />
                 </div>
                 <div className="flex gap-1 justify-between items-center mt-4 ">
                     
@@ -53,14 +53,14 @@ function SupplierDash() {
                         <img src={item2} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
                         <div className="text-2xl font-semibold">15{" "}<span className='text-xl font-normal'>Total Products</span></div>
                     </div>
-                    <div className="flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2xl shadow-lg">
+                    {/* <div className="flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2xl shadow-lg">
                         <img src={item4} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
                         <div className="text-2xl font-semibold">357{" "}<span className='text-xl font-normal'>Total Orders</span></div>
                     </div>
                      <div className="flex flex-col gap-3 justify-center items-center mt-4 px-10 pb-2 bg-white border-gray-300 rounded-2xl shadow-lg">
                         <img src={item2} alt="" className='w-20 h-20 mt-10 bg-green-200 rounded-full p-3' />
                         <div className="text-2xl font-semibold">357{" "}<span className='text-xl font-normal'>Total Orders</span></div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-col gap-3 bg-white my-7 p-5 rounded-lg shadow-lg">
                     <div className="flex justify-between">

@@ -54,7 +54,7 @@ function Requests(){
                                 <td className='px-8 py-5 text-lg'>2024-04-01</td>
                                 <td className='px-8 py-5 text-lg'>3.30 PM</td>
                                 <td className='px-8 py-5 text-lg'>Cinnamon</td>
-                                <td className='px-8 py-5 text-lg'><span className='bg-yellow-500 text-black font-semibold rounded px-4 py-2'>Cancelled</span></td>
+                                <td className='px-8 py-5 text-lg'><span className='bg-red-600 text-black font-semibold rounded px-4 py-2'>Cancelled</span></td>
                                
                             </tr>
                             <tr className='bg-white hover:bg-gray-50 border-b border-gray-100'>
@@ -72,8 +72,8 @@ function Requests(){
                                 <td className='px-8 py-5 text-lg'>2024-04-01</td>
                                 <td className='px-8 py-5 text-lg'>9.40 AM</td>
                                 <td className='px-8 py-5 text-lg'>Clove</td>
-                                <td className='px-8 py-5 text-lg'><button className="bg-green-600 text-black font-semibold rounded px-4 py-2">
-                                    Processing
+                                <td className='px-8 py-5 text-lg'><button className="bg-yellow-500 text-black font-semibold rounded px-4 py-2">
+                                    Accepted
                                 </button></td>
                                 
                             </tr>

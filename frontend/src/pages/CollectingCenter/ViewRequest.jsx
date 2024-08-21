@@ -1,9 +1,16 @@
 import React from 'react'
-import SideBar from '../../components/supplier/SideBar'
-import NavBar from '../../components/supplier/NavBar'
+import SideBar from '../../components/CollectingCenter/CollectorSideBar'
+import NavBar from '../../components/CollectingCenter/CollectorNavBar'
 import logo from '../../assets/Untitled design (1) 1.svg';
-import {Link} from 'react-router-dom'
-const Advertisments = () => {
+import {Link, useNavigate } from 'react-router-dom'
+
+const ViewRequest = () => {
+    const navigate = useNavigate();
+
+    const handleRequestClick = () => {
+        navigate('/supplier/Requestform'); // Update the path to the Requestform
+    };
+
     return (
         <>
             <NavBar />
@@ -11,11 +18,11 @@ const Advertisments = () => {
                 <SideBar />
                 <div className="flex flex-col flex-1">
                     <div className="flex flex-col">
-                        <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Advertisement</div>
+                        <div className="font-semibold text-xl mb-2 -mt-12 mb-5">Requests</div>
                         <div className="flex flex-row gap-3">
     
-                            <div className="font-normal text-gray-400 text-xl">Dashboard</div>{">"}
-                            <div className="font-normal text-xl">Advertisement</div>
+                            <div className="font-normal text-gray-400 text-xl">Requests</div>{">"}
+                            <div className="font-normal text-xl">View Request</div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-3 m-3 bg-white px-5 mx-20 py-5 mx-20 max-w-3xl ml-[150px] mt-9 rounded-md">
@@ -91,6 +98,23 @@ const Advertisments = () => {
                                 </div>
                             </div>
                         </div>
+                        {/* Request button */}
+                        <div className="flex justify-center gap-28 mt-6">
+                            <button
+                                type="button"
+                                className="bg-primary text-gray-900 font-semibold p-2 rounded-md hover:bg-primary-dark"
+                                onClick={handleRequestClick} // Add onClick handler
+                            >
+                                Handle Request
+                            </button>
+                            <button
+                                type="button"
+                                className="bg-red-500 text-gray-900 font-semibold p-2 rounded-md hover:bg-primary-dark"
+                                // onClick={handleRequestClick} // Add onClick handler
+                            >
+                                Reject Request
+                            </button>
+                        </div>
 
                         <div className="flex flex-col items-center justify-center p-10 px-20 bg-gray-100 mt-6 mb-6 ">
                             <div className="font-bold text-xl">Thank You for Choosing Nature Trade </div>
@@ -106,4 +130,4 @@ const Advertisments = () => {
       )
     }
     
-export default Advertisments
+export default ViewRequest

@@ -10,19 +10,19 @@ const AwardsData=[
   {
     id: 1,
     name: "SEDB Award",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: `"The Presidential Export Awards (PEA) stands as the pinnacle of recognition bestowed by Hon. President of Sri Lanka upon exporters who have made exceptional contributions to the country's export sector and economic advancement."`,
     img: award1,
   },
   {
     id: 2,
     name: "SLSI Organic Certification",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: `"SLSI is the National Standards Body in Sri Lanka and a member of the International Organisation for Standardisation (ISO). An SLSI Certification signifies that a product is manufactured in compliance with Sri Lanka Standard Specifications, and can be purchased with an assurance of quality."`,
     img: certification1,
   },
   {
     id: 3,
     name: "Fair Trade Certification",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: `"Fairtrade Certified it means that they were produced in accordance with Fairtrade International's rigorous environmental, economic and social standards. This is independently verified through regular audits by an accredited third-party auditor, FLOCERT"`,
     img: certification2,
   },
 
