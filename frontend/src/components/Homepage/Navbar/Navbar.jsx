@@ -38,7 +38,7 @@ const Navbar = () => {
           {/* Logo */}
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex justify-center items-center gap-5 font-Poppins">
-              <img src={Logo} alt="Logo" className="w-15 h-14 text-xl" />
+              <img src={Logo} alt="Logo" className="w-15 h-14 text-xl rounded-full" />
               NatureTrade
             </a>
           </div>

@@ -48,7 +48,7 @@ const Footer = () => {
         items-center gap-4 tracking-wider
         font-Poppins">
         <img src={Logo} alt="Logo"
-        className="w-12"/>
+        className="w-12 rounded-full"/>
         NatureTrade
         </a>
         </div>
