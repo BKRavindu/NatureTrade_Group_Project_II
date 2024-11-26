@@ -3,8 +3,8 @@ import { AiOutlineEye, AiOutlineEyeInvisible, AiOutlineMail, AiOutlineLock } fro
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import axios from "axios";
-import { server } from "../server";
-import styles from '../styles/styles';
+import { server } from "../../server";
+import styles from '../../styles/styles';
 import Logo from "../assets/Logo.png";
 import loginImage from '../assets/loginImage.jpg';
 import { RiUserSharedLine } from "react-icons/ri";

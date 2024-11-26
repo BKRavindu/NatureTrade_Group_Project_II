@@ -1,10 +1,10 @@
 
 import {React,useState} from 'react'
-import styles from '../styles/styles';
+import styles from '../../styles/styles';
 import {Link} from 'react-router-dom';
 import {RxAvatar} from 'react-icons/rx';
 import { AiOutlineEye, AiOutlineEyeInvisible, AiOutlineMail, AiOutlineUser, AiOutlineLock } from 'react-icons/ai';
-import { server } from "../server";
+import { server } from "../../server";
 import axios from "axios";
 import { toast } from 'react-toastify';
 import Logo from "../assets/Logo.png";
